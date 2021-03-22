@@ -1,0 +1,12 @@
+.forum{
+    flex:1;
+    width:95%;
+    margin: 0px auto;
+     
+}
+
+.stories{
+    max-width:80%;
+    float:left;
+    /* background-color: aquamarine; */
+}

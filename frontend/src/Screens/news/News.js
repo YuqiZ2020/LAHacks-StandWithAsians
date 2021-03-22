@@ -11,14 +11,8 @@ export default class News extends React.Component {
 
     render() {
         return (
-<<<<<<< HEAD
-            <div>            
-                <FetchNews/>
-                
-=======
             <div className="news">
                 <FetchNews />
->>>>>>> 07128b031216b948c472572df92ab63ed529d04c
             </div>
         )
     }

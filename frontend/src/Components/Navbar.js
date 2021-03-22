@@ -7,7 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import About from "./About";
-import Forum from "./Forum";
+import Forum from "../Screens/forum/Forum";
 import Gallery from "./Gallery";
 import Home from "./Home";
 import News from "../Screens/news/News";

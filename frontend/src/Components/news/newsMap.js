@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { NewsContext } from "../fetchNews/fetchNews";
 import NewsCard from "./newsCard";
 import './newsMap.css'
+
+
 function NewsMap({ data }) {
 
 
