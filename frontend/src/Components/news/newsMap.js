@@ -1,21 +1,26 @@
 import React, { useContext } from "react";
 import { NewsContext } from "../fetchNews/fetchNews";
 import NewsCard from "./newsCard";
-
-function NewsMap(props) {
-   const { data } = useContext(NewsContext);
-  console.log(data);
+import './newsMap.css'
+function NewsMap({data}) {
+   
+  
 
   return (
     <div>
       
-      <div className="all__news">
-        {data
-          ? data.articles.map((news) => (
-              <NewsCard data={news} key={news.url} />
-            ))
-          : "Loading"}
-      </div>
+      <div>
+                    <h1 className="head__text">News </h1>
+                    
+                    <div className="all__news">
+                    {data
+                    ?data.map((data) => (
+                        <NewsCard data={data} key={data.url} />
+                    ))
+                    :'Loading'}
+                       
+                    </div>
+                </div>
     </div>
   );
 }

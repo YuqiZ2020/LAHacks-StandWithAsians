@@ -1,0 +1,6 @@
+.all__news{
+    flex-direction: row;
+    display:flex;
+    background-color: black;
+    max-width: 100%;
+}

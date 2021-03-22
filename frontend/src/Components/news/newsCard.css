@@ -1,0 +1,5 @@
+.newCard{
+    flex-direction: row;
+    display:flex;
+    padding: 30px;
+}
