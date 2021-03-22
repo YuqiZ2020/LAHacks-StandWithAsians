@@ -10,8 +10,8 @@ import About from "./About";
 import Forum from "./Forum";
 import Gallery from "./Gallery";
 import Home from "./Home";
-import News from "./News";
-import Resources from "./Resources";
+import News from "../Screens/news/News";
+import Resources from "../Screens/resources/Resources";
 
 export default class Navbar extends React.Component {
     render() {
