@@ -1,5 +1,19 @@
 import json
 from newsplease import NewsPlease
+import requests
+from bs4 import BeautifulSoup
+
+search_keyword = "asian"
+url = "https://news.google.com/rss/search?pz=1&cf=all&hl=en-US&q=" + search_keyword + "&cf=all&gl=US&ceid=US:en"
+resp = requests.get(url)
+soup = BeautifulSoup(resp.content, features="xml")
+items = soup.find_all("link")
+news_urls = []
+num_article = 5
+for i in range(1, num_article + 1):
+    news_urls.append(items[i].contents[0])
+print(news_urls)
+
 
 def article_to_dict(article):
     d = article.__dict__
@@ -13,9 +27,10 @@ def write_article_json(article):
         json.dump(d, outfile, sort_keys=True, indent=4)
 
 
-article_url = 'https://www.nbcnews.com/news/us-news/people-across-u-s-protest-anti-asian-hate-following-deadly-n1261677'
-article = NewsPlease.from_url(article_url, timeout=5)
-print(article.title)
+base_path = "./"
+for i in range(1, num_article + 1):
+    article = NewsPlease.from_url(news_urls[i], timeout=5)
+    print(article.title)
+    # write_article_json(article)
 
-base_path = "D:/LA-Hacks-2021/"
-write_article_json(article)
+
