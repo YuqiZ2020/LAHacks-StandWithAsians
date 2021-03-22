@@ -4,11 +4,9 @@ import NewsMap from '../news/newsMap'
 export default class fetchNews extends Component {
     constructor(props){
         super(props);
-
         this.state = {
             data:[],
-        };
-        
+        };        
         const url = 'https://newsapi.org/v2/everything?' +
         'q=StopAsianHate&' +
         'from=2021-03-01&' +
@@ -16,10 +14,7 @@ export default class fetchNews extends Component {
         'sortBy=popularity&' +
         // 'country=us&' +
         'apiKey=63c9f3adbfde498d9d75b0f0e05c0654';
-
-        this.req = new Request(url);
-
-        
+        this.req = new Request(url);        
     }
 
     componentDidMount() {
@@ -30,19 +25,15 @@ export default class fetchNews extends Component {
             // Set state with result
             console.log(articles);
             this.setState({ data: articles });
-          })
-
+        })
     }
-
     
     render() {
-        let newsData = this.state.data;
- 
+        let newsData = this.state.data; 
         return (
             <div>
-                    <NewsMap data={newsData}/>
-
-          </div>
+                <NewsMap data={newsData}/>
+            </div>
         )
     }
 }

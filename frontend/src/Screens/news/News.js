@@ -4,23 +4,16 @@ import React from 'react';
 import FetchNews from '../../Components/fetchNews/fetchNews'
 import "./News.css"
 
-
-
 export default class News extends React.Component {
     constructor(props) {
         super(props)
     }
 
     render() {
-
         return (
             <div className="news">
-
                 <FetchNews />
-
             </div>
-
-
         )
     }
 }
