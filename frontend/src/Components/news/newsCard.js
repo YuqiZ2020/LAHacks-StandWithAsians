@@ -15,13 +15,14 @@ import { FormHelperText } from "@material-ui/core";
 const useStyles = makeStyles({
     newsCard:{
         display:'flex',
-        flexDirection:'row',
+        flexDirection:'column',
         maxWidth:'100%',
     },
     root: {
-      maxWidth: 300,
-      minWidth:300,
+      maxWidth: 250,
+      minWidth:250,
       margin:20,
+      height:400,
       
     },
     media: {
@@ -34,7 +35,7 @@ function NewsCard({ data }) {
 
     const classes = useStyles();
     return (
-        <div className={classes.newsCard}>
+        <div className='newsCard'>
 
             <div>
                 <Card className={classes.root}>
@@ -46,10 +47,10 @@ function NewsCard({ data }) {
                     />
 
                     <CardContent>
-                        <Typography gutterBottom variant="h6" component="h5">
+                        <Typography gutterBottom variant="h7" component="h5">
                         {data.title}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        <Typography variant="body4" color="textSecondary" component="p">
                             {data.content}
                         </Typography>
                     </CardContent>

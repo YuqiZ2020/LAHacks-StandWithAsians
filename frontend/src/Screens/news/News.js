@@ -2,7 +2,7 @@ import React from 'react';
 // import {NewsContextProvider} from '../../Components/fetchNews/fetchNews'
 // import NewsMap from '../../Components/news/newsMap'
 import FetchNews from '../../Components/fetchNews/fetchNews'
-
+import Petitions from '../../Components/fetchPetitions/fetchPetitions'
 
 
 export default class News extends React.Component {
@@ -13,10 +13,9 @@ export default class News extends React.Component {
     render() {
 
         return (
-            <div>
-                 
+            <div>            
                 <FetchNews/>
-
+                <Petitions/>
             </div>
            
             

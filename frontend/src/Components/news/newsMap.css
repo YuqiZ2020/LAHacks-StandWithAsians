@@ -3,4 +3,6 @@
     display:flex;
     background-color: black;
     max-width: 100%;
+    flex:1;
+    height: 500px;
 }
