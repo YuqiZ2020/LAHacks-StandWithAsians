@@ -13,22 +13,20 @@ import Typography from '@material-ui/core/Typography';
 import { FormHelperText } from "@material-ui/core";
 
 const useStyles = makeStyles({
-    newsCard:{
-        display:'flex',
-        flexDirection:'row',
-        maxWidth:'100%',
+    newsCard: {
+        display: 'inline-flex'
     },
     root: {
-      maxWidth: 300,
-      minWidth:300,
-      margin:20,
-      
+        maxWidth: 300,
+        minWidth: 300,
+        margin: 20,
+
     },
     media: {
-      height: 155,
+        height: 155,
     },
-  });
-  
+});
+
 
 function NewsCard({ data }) {
 
@@ -40,19 +38,19 @@ function NewsCard({ data }) {
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
-                        className={classes.media}
-                        image={data.urlToImage}
-                        title={data.title}
-                    />
+                            className={classes.media}
+                            image={data.urlToImage}
+                            title={data.title}
+                        />
 
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h5">
-                        {data.title}
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            {data.content}
-                        </Typography>
-                    </CardContent>
+                        <CardContent>
+                            <Typography gutterBottom variant="h6" component="h5">
+                                {data.title}
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                {data.content}
+                            </Typography>
+                        </CardContent>
 
 
                     </CardActionArea>
@@ -62,15 +60,15 @@ function NewsCard({ data }) {
                         </Button> */}
 
                         <Button size="small" color="primary"
-                        href={data.url}>
-                        Learn More
+                            href={data.url}>
+                            Learn More
                         </Button>
                     </CardActions>
 
                 </Card>
-                </div>
-    </div>
-  );
+            </div>
+        </div>
+    );
 }
 
 export default NewsCard;

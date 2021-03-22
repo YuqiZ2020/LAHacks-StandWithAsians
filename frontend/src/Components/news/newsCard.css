@@ -1,5 +1,5 @@
 .newCard{
-    flex-direction: row;
-    display:flex;
+    /* flex-direction: row; */
+    display:inline;
     padding: 30px;
 }
