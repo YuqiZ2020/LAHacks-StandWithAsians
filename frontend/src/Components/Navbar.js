@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
             <Router>
                 <div className="navbar">
                     <nav className="link-container">
-                        <Link to="/home" className="link">Home</Link>
+                        <Link to="/" className="link">Home</Link>
                         <Link to="/about" className="link">About</Link>
                         <Link to="/news" className="link">News</Link>
                         <Link to="/forum" className="link">Forum</Link>
@@ -27,7 +27,7 @@ export default class Navbar extends React.Component {
                         <Link to="/resources" className="link">Resources</Link>
                     </nav>
                     <Switch>
-                        <Route path="/home" component={Home} />
+                        <Route path="/" exact component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/news" component={News} />
                         <Route path="/forum" component={Forum} />
