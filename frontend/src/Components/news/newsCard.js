@@ -17,56 +17,46 @@ const useStyles = makeStyles({
         display: 'inline-flex'
     },
     root: {
-        maxWidth: 300,
+        maxWidth: 360,
         minWidth: 300,
         margin: 20,
-
     },
     media: {
         height: 155,
     },
 });
 
-
 function NewsCard({ data }) {
-
     const classes = useStyles();
     return (
-        <div className='newsCard'>
-
-            <div>
-                <Card className={classes.root}>
-                    <CardActionArea>
-                        <CardMedia
-                            className={classes.media}
-                            image={data.urlToImage}
-                            title={data.title}
-                        />
-
+        <div className={classes.newsCard}>
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={data.urlToImage}
+                        title={data.title}
+                    />
                     <CardContent>
                         <Typography gutterBottom variant="h7" component="h5">
-                        {data.title}
+                            {data.title}
                         </Typography>
-                        <Typography variant="body4" color="textSecondary" component="p">
+                        <Typography variant="body3" color="textSecondary" component="p">
                             {data.content}
                         </Typography>
                     </CardContent>
-
-
-                    </CardActionArea>
-                    <CardActions>
-                        {/* <Button size="small" color="primary">
+                    
+                </CardActionArea>
+                <CardActions>
+                    {/* <Button size="small" color="primary">
                         Share
                         </Button> */}
-
-                        <Button size="small" color="primary"
-                            href={data.url}>
-                            Learn More
+                    <Button size="small" color="primary"
+                        href={data.url}>
+                        Learn More
                         </Button>
-                    </CardActions>
-
-                </Card>
-            </div>
+                </CardActions>
+            </Card>
         </div>
     );
 }
