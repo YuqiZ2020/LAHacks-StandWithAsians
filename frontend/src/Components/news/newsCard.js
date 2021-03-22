@@ -13,23 +13,20 @@ import Typography from '@material-ui/core/Typography';
 import { FormHelperText } from "@material-ui/core";
 
 const useStyles = makeStyles({
-    newsCard:{
-        display:'flex',
-        flexDirection:'column',
-        maxWidth:'100%',
+    newsCard: {
+        display: 'inline-flex'
     },
     root: {
-      maxWidth: 250,
-      minWidth:250,
-      margin:20,
-      height:400,
-      
+        maxWidth: 300,
+        minWidth: 300,
+        margin: 20,
+
     },
     media: {
-      height: 155,
+        height: 155,
     },
-  });
-  
+});
+
 
 function NewsCard({ data }) {
 
@@ -41,10 +38,10 @@ function NewsCard({ data }) {
                 <Card className={classes.root}>
                     <CardActionArea>
                         <CardMedia
-                        className={classes.media}
-                        image={data.urlToImage}
-                        title={data.title}
-                    />
+                            className={classes.media}
+                            image={data.urlToImage}
+                            title={data.title}
+                        />
 
                     <CardContent>
                         <Typography gutterBottom variant="h7" component="h5">
@@ -63,15 +60,15 @@ function NewsCard({ data }) {
                         </Button> */}
 
                         <Button size="small" color="primary"
-                        href={data.url}>
-                        Learn More
+                            href={data.url}>
+                            Learn More
                         </Button>
                     </CardActions>
 
                 </Card>
-                </div>
-    </div>
-  );
+            </div>
+        </div>
+    );
 }
 
 export default NewsCard;

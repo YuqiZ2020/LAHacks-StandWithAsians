@@ -2,11 +2,12 @@ import React from 'react';
 // import {NewsContextProvider} from '../../Components/fetchNews/fetchNews'
 // import NewsMap from '../../Components/news/newsMap'
 import FetchNews from '../../Components/fetchNews/fetchNews'
-import Petitions from '../../Components/fetchPetitions/fetchPetitions'
+import "./News.css"
+
 
 
 export default class News extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
 
@@ -15,10 +16,10 @@ export default class News extends React.Component {
         return (
             <div>            
                 <FetchNews/>
-                <Petitions/>
+                
             </div>
-           
-            
+
+
         )
     }
 }
