@@ -1,0 +1,12 @@
+.link-container {
+    display: flex;
+    height: 5vh;
+    margin: 20px;
+    background-color: black;
+}
+.link {
+    width:fit-content;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
