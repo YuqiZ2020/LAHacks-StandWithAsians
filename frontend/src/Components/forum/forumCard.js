@@ -11,15 +11,17 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { FormHelperText } from "@material-ui/core";
+import { AutoComplete } from 'antd';
 
 const useStyles = makeStyles({
     newsCard: {
         display: 'inline-flex',
         // backgroundColor:'black',
-        flexDirection:'column'
+        flexDirection:'column',
+        marginLeft:25,
     },
     root: {
-        maxWidth: 300,
+        maxWidth: 400,
         minWidth: 300,
         margin: 20,
         padding:20,

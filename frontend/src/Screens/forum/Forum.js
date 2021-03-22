@@ -13,8 +13,11 @@ export default class Forum extends React.Component {
                     <ForumMap data = {data}/>
                 </div>
             
-                <div>
+                <div className="submitButton">
                     <SubmitButton/>
+                    <div className="stats">
+                        There are XXX people from XXX states shared their stores
+                    </div>
                 </div>
             </div>
             

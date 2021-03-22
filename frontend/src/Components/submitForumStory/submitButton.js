@@ -1,6 +1,8 @@
 import { Modal, Button } from 'antd';
 import React, { useContext } from "react";
 import 'antd/dist/antd.css';
+import './submitButton.css'
+import Form from './forumForm'
 
 const SubmitButton = () => {
   const [visible, setVisible] = React.useState(false);
@@ -27,17 +29,18 @@ const SubmitButton = () => {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      <Button className="button" type="primary" size = "large"onClick={showModal} block>
         Share Your Story!
       </Button>
       <Modal
-        title="Title"
+        title="Share Your Stories"
         visible={visible}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
       >
-        <p>{modalText}</p>
+        
+        <Form/>
       </Modal>
     </>
   );
