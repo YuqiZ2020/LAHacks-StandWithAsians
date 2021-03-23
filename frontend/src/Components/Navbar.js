@@ -7,11 +7,12 @@ import {
     Link
 } from "react-router-dom";
 import About from "./About";
-import Forum from "../Screens/forum/Forum";
+import Forum from "../Pages/forum/Forum";
 import Gallery from "./Gallery";
 import Home from "./Home";
-import News from "../Screens/news/News";
-import Resources from "../Screens/resources/Resources";
+import News from "../Pages/news/News";
+import Resources from "../Pages/resources/Resources";
+import Review from "./Review";
 
 export default class Navbar extends React.Component {
     render() {
@@ -33,6 +34,7 @@ export default class Navbar extends React.Component {
                         <Route path="/forum" component={Forum} />
                         <Route path="/gallery" component={Gallery} />
                         <Route path="/resources" component={Resources} />
+                        <Route path="/review" component={Review} />
                     </Switch>
                 </div>
             </Router>
