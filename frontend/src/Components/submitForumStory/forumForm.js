@@ -20,7 +20,7 @@ const tailLayout = {
     span: 16,
   },
 };
-
+  
 class SubmitForm extends React.Component {
   formRef = React.createRef();
   onFinish = (values) => {
