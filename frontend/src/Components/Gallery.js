@@ -6,6 +6,7 @@ import "./Gallery.css"
 const FirebaseFileUpload = () => {
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);
+    const [toggle, setToggle] = useState(false);
     const types = ["image/png", "image/jpeg"];
     const handleChange = e => {
         let selected = e.target.files[0];
@@ -13,10 +14,10 @@ const FirebaseFileUpload = () => {
             setImage(selected);
         } else {
             setImage(null);
-            alert("Please select a jpeg or png file!");
         }
     }
     const handleUpload = () => {
+        setToggle(true);
         const uploadTask = storage.ref(`images/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
@@ -51,14 +52,23 @@ const FirebaseFileUpload = () => {
 
     return (
         <div>
-            <p>Upload Image that represents your culture!</p>
+            <p className="file-chosen">Share images that represent your culture!</p>
+            <br />
             <label>
                 <input type="file" onChange={handleChange} />
-                <span>Select Image</span>
+                <span>+</span>
             </label>
-            { image && <span>{image.name}</span>}
-            <button className="upload" onClick={handleUpload}> Upload </button>            
-            <progress value={progress} max="100"/>
+            { image ? (
+                <div>
+                    <span className="file-chosen">{image.name}</span>
+                    <button className="upload" onClick={handleUpload}> OK </button>
+                </div>
+            ) : <span className="file-chosen">Please select a jpeg or png file</span>}
+            { (toggle && progress < 100) ? (
+                <progress className="progress-bar" value={progress} max="100" />
+            ) : null}
+            <br />
+
         </div>
     )
 };

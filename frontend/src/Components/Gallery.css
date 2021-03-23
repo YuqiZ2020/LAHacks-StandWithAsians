@@ -1,5 +1,5 @@
 .gallery {
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
     margin: 20px;
 }
 
@@ -9,31 +9,49 @@ label input{
     opacity: 0;
 }
 label{
-    display: inline-block;
-    width: fit-content;
-    padding: 0 5px;
-    border-radius: 5px;
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
     margin: 10px auto;
-    line-height: 30px;
+    line-height: 100%;
     background-color: black;
     color: orange;
     font-weight: bold;
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 30px;
+
     text-align: center;
+    justify-content: center;
+}
+
+.file-chosen {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
 }
 
 .upload {
     display: block;
-    /* margin: 10px auto; */
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Merriweather', serif;
-    letter-spacing: 1px;
+    /* font-family: 'Merriweather', serif; */
+    /* letter-spacing: 1px; */
     text-align: center;
     background-color: black;
     color: orange;
-    border-radius: 5px;
+    border-radius: 50%;
+}
+
+.progress-bar {
+    display: block;
+    margin: 10px auto;
+    width: 50vw;
 }
 
 .image-wrap {
