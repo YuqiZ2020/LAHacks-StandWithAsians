@@ -1,20 +1,25 @@
-import React, {useState} from 'react';
-import {db, auth, storage} from "../firebase";
+import React, { useState } from 'react';
+import { db, auth, storage } from "../firebase";
 
 import "./Gallery.css"
 
 const FirebaseFileUpload = () => {
     const [image, setImage] = useState(null);
+    const types = ["image/png", "image/jpeg"];
     const handleChange = e => {
-        if (e.target.files[0]) {
-            setImage(e.target.files[0])
+        let selected = e.target.files[0];
+        if (selected && types.includes(selected.type)) {
+            setImage(selected);
+        } else {
+            setImage(null);
+            alert("Please select a jpeg or png file!");
         }
     }
     const handleUpload = () => {
         const uploadTask = storage.ref(`images/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
-            snapshot => {},
+            snapshot => { },
             error => {
                 console.log(error);
             },
@@ -26,14 +31,14 @@ const FirebaseFileUpload = () => {
                     .then(url => {
                         console.log(url);
                         db.collection("gallery").add({
-                            url : url
+                            url: url
                         })
-                        .then((docRef) => {
-                            console.log("Document written with ID: ", docRef.id);
-                        })
-                        .catch((error) => {
-                            console.error("Error adding document: ", error);
-                        });
+                            .then((docRef) => {
+                                console.log("Document written with ID: ", docRef.id);
+                            })
+                            .catch((error) => {
+                                console.error("Error adding document: ", error);
+                            });
                     });
             }
         )
@@ -50,22 +55,22 @@ const FirebaseFileUpload = () => {
 };
 
 export default class Gallery extends React.Component {
-/*
-    componentDidMount() {
-        db.collection('users')
-            .get()
-            .then( snapshot => {
-                const us = []
-                snapshot.forEach(doc => {
-                    const data = doc.data();
-                    us.push(data);
+    /*
+        componentDidMount() {
+            db.collection('users')
+                .get()
+                .then( snapshot => {
+                    const us = []
+                    snapshot.forEach(doc => {
+                        const data = doc.data();
+                        us.push(data);
+                    })
+                    this.setState({us:us})
+                    console.log(snapshot)
                 })
-                this.setState({us:us})
-                console.log(snapshot)
-            })
-            .catch(error => console.log(error))
-    }
-*/
+                .catch(error => console.log(error))
+        }
+    */
     render() {
         return (
             <div className="gallery">
