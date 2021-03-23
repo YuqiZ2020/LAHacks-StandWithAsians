@@ -1,14 +1,12 @@
 h2
 {
-  font-family: fantasy;
+  font-family: "Permanent Marker", fantasy;
   font-weight: 900;
   font-size: large;
 }
 
 h3
 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "meriweather", sans-serif;
   font-weight: 800;
 }
