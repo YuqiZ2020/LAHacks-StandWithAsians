@@ -25,7 +25,7 @@ export default class fetchNews extends Component {
         .then(res => {
             const articles = res.articles;
             // Set state with result
-            console.log(articles);
+            // console.log(articles);
             this.setState({ data: articles });
         })
     }
