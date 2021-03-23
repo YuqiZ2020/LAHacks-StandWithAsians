@@ -38,10 +38,10 @@ function NewsCard({ data }) {
                         title={data.title}
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h7" component="h5">
+                        <Typography gutterBottom variant="subtitle1" component="h5">
                             {data.title}
                         </Typography>
-                        <Typography variant="body3" color="textSecondary" component="p">
+                        <Typography variant="body2" color="textSecondary" component="p">
                             {data.content}
                         </Typography>
                     </CardContent>

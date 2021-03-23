@@ -2,6 +2,7 @@ import React from 'react';
 // import {NewsContextProvider} from '../../Components/fetchNews/fetchNews'
 // import NewsMap from '../../Components/news/newsMap'
 import FetchNews from '../../Components/fetchNews/fetchNews'
+import FetchTweets from '../../Components/fetchTweets/fetchTweets'
 import "./News.css"
 
 export default class News extends React.Component {
@@ -12,6 +13,7 @@ export default class News extends React.Component {
     render() {
         return (
             <div className="news">
+                {/* <FetchTweets/> */}
                 <FetchNews />
             </div>
         )
