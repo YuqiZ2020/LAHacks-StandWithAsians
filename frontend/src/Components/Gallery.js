@@ -50,27 +50,34 @@ const FirebaseFileUpload = () => {
 };
 
 export default class Gallery extends React.Component {
-/*
+
     componentDidMount() {
-        db.collection('users')
+        db.collection('gallery')
             .get()
             .then( snapshot => {
-                const us = []
+                const urls = []
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    us.push(data);
+                    urls.push(data);
                 })
-                this.setState({us:us})
-                console.log(snapshot)
+                this.setState({urls : urls})
+                console.log(this.state.urls)
             })
             .catch(error => console.log(error))
-    }
-*/
+    };
+
+    renderImgs = (source) => {
+        return source.map((url) => {
+            return <img src={url} />
+        })
+    };
+
     render() {
         return (
             <div className="gallery">
                 <div className="img">
                     <p>xxx some image</p>
+                    {this.renderImgs(this.state.urls)}
                 </div>
                 <FirebaseFileUpload />
             </div>
