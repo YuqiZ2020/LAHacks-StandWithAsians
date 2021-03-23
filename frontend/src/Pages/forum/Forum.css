@@ -32,8 +32,18 @@
 
 .mapTitle{
     display: flex;
+    padding:10px;
     justify-content: center;
-    color:gray;
+    font-family: 'Russo One', sans-serif; 
+}
+
+.forumT{
+    display:block;
+    /* background-color: red; */
+    width:90%;
+    font-family: 'Russo One', sans-serif; 
+    margin:0 auto;
+    font-size:30px;
 }
 
 .stories-container{
@@ -80,4 +90,11 @@
     width:95%;
     margin-top:10;
     font-family: 'Russo One', sans-serif; 
+}
+
+.map-bottom{
+    width:90%;
+    /* background-color: gray; */
+    margin:0 auto;
+    
 }

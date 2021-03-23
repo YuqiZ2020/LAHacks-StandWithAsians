@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Column } from '@ant-design/charts';
 
-const DemoColumn: React.FC = () => {
+const Map2: React.FC = () => {
   var data = [
     {
       type: 'CA',
@@ -93,4 +93,4 @@ const DemoColumn: React.FC = () => {
   return <Column {...config} />;
 };
 
-export default DemoColumn;
+export default Map2;

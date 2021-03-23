@@ -11,8 +11,8 @@ export default class fetchNews extends Component {
         'q=StopAsianHate&' +
         'from=2021-03-01&' +
         // 'language=en$' + 
-        'sortBy=popularity&' +
-        'pageSize=10&' +
+        'sortBy=publishedAt&' +
+        'pageSize=11&' +
         // 'country=us&' +
         // 'domains=techcrunch.com&' +
         'apiKey=63c9f3adbfde498d9d75b0f0e05c0654';

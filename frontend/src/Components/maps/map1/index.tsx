@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Bar } from '@ant-design/charts';
 
-const DemoBar: React.FC = () => {
+const Map1: React.FC = () => {
   var data = [
     {
       type: 'Verbal Harrassment/Name Calling',
@@ -53,4 +53,4 @@ const DemoBar: React.FC = () => {
   return <Bar {...config} />;
 };
 
-export default DemoBar;
+export default Map1;

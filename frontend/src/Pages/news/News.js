@@ -15,7 +15,7 @@ export default class News extends React.Component {
             <div className="news">
                 {/* <FetchTweets/> */}
                 <div>
-                    <div className='map2Title'>Number of Discrimination Against Asians</div>
+                    <div className='map2Title'>Number of Discrimination against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
                     <Map2 />
                 </div>
                 <FetchNews />
