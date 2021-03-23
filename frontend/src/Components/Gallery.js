@@ -78,7 +78,8 @@ export default class Gallery extends React.Component {
 
     renderImgs = (source) => {
         return source.map((url) => {
-            return <img src={url} />
+            console.log(url);
+            return <img src={url.url} />
         })
     };
 
