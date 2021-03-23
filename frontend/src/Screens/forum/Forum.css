@@ -1,14 +1,31 @@
 .forum{
     flex:1;
-    width:95%;
+    /* width:95%; */
     margin: 0px auto;
-     
+    /* background-color: black; */
 }
 
-.stories{
-    max-width:80%;
+.stories-container{
+    display: flex;
+    width:100%;
+
+    height:100%
+}
+.stories1{
+    max-width:40%;
+    /* max-height:10; */
     float:left;
+    /* background-color: rgb(228, 163, 163); */
+    display: flex;
+    padding-left: 3%;
+    flex-direction: column;
     /* background-color: aquamarine; */
+}
+
+
+.stories2{
+    max-width:40%;
+    /* background-color:chartreuse; */
 }
 
 .submitButton{
@@ -17,10 +34,17 @@
     float:right;
     /* background-color: blueviolet; */
 }
+.submit{
+    width:95%;
+    margin-bottom: 20;
+}
 
 .stats{
-    font-size: xx-large;
-    background-color: black;
-    color:white;
+    font-size: 60px;
+    background-color: darkorange;
+    /* color:white; */
     text-align: center;
+    width:95%;
+    margin-top:10;
+    font-family: 'Russo One', sans-serif; 
 }

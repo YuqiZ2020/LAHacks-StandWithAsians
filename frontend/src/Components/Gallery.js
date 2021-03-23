@@ -52,7 +52,7 @@ const FirebaseFileUpload = () => {
     return (
         <div>
             <p>Upload Image that represents your culture!</p>
-            <label>
+            <label className='labelGallery'>
                 <input type="file" onChange={handleChange} />
                 <span>Select Image</span>
             </label>
