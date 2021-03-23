@@ -48,8 +48,13 @@ const FirebaseFileUpload = () => {
     return (
         <div>
             <p>Upload Image that represents your culture!</p>
-            <input type="file" onChange={handleChange} />
-            <button onClick={handleUpload}> Upload </button>
+            <label>
+                <input type="file" onChange={handleChange} />
+                <span>Select Image</span>
+            </label>
+            { image && <span>{image.name}</span>}
+            <button className="upload" onClick={handleUpload}> Upload </button>
+
         </div>
     )
 };
@@ -77,20 +82,26 @@ export default class Gallery extends React.Component {
     };
 
     renderImgs = (source) => {
-        return source.map((url) => {
+        return source.map((url, index) => {
             console.log(url);
-            return <img src={url.url} />
+            return (
+                <div key={index} className="column">
+                    <img className="image-grid" src={url.url} />
+                </div>
+            )
         })
     };
 
     render() {
         return (
             <div className="gallery">
-                <div className="img">
-                    <p>xxx some image</p>
-                    {this.renderImgs(this.state.urls)}
-                </div>
                 <FirebaseFileUpload />
+                <div className="image-wrap">
+                    <div className="image-wrap">
+                        {this.renderImgs(this.state.urls)}
+                    </div>
+
+                </div>
             </div>
 
         )
