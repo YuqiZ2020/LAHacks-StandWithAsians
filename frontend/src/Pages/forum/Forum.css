@@ -5,6 +5,37 @@
     /* background-color: black; */
 }
 
+.maps{
+    flex:1;
+    display: flex;
+    width:95%;
+    /* height:100; */
+    margin:0 auto;
+    /* float:left; */
+    /* background-color: darkorange; */
+
+}
+
+.forum-title{
+    font-family: 'Merriweather', serif;
+    display:block;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.maps > div {
+    width: 100%;
+  }
+
+.mapTitle{
+    display: flex;
+    justify-content: center;
+    color:gray;
+}
+
 .stories-container{
     display: flex;
     width:100%;
@@ -37,6 +68,8 @@
 .submit{
     width:95%;
     margin-bottom: 20;
+    margin-top: 10;
+    padding-top: 10;
 }
 
 .stats{

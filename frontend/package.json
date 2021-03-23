@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/charts": "^1.0.21",
     "@material-ui/core": "^4.11.3",
     "antd": "^4.14.1",
     "axios": "^0.21.1",
@@ -22,6 +23,7 @@
     "socket.io": "^4.0.0",
     "socket.io-client": "^4.0.0",
     "twit": "^2.2.11",
+    "typescript": "^4.2.3",
     "util": "^0.12.3"
   },
   "scripts": {
@@ -35,6 +37,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^3"
   },
   "browserslist": {
     "production": [

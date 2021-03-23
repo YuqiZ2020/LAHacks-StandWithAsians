@@ -3,6 +3,10 @@ import "./Forum.css"
 import ForumMap from '../../Components/forum/forumMap'
 import data1 from '../../Components/forum/forumDummy1.js'
 import data2 from '../../Components/forum/forumDummy2.js'
+import Map1 from '../../Components/maps/map1'
+
+
+
 
 import SubmitButton from '../../Components/submitForumStory/submitButton'
 
@@ -10,6 +14,14 @@ export default function Forum() {
 
     return (
         <div className="forum">
+            
+            <div className='forum-title'>We need your support!</div>
+            <div className='mapTitle'>Types of Discrimination(N = 3,795)</div>
+            <div className='maps'>
+                
+                <Map1/>
+
+            </div>
             <div className='stories-container'>
 
 
