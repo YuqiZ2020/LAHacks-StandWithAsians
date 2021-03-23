@@ -4,7 +4,7 @@ export default class Resources extends React.Component {
     render() {
         return (
             <div>
-                <p>The community is SUPPORTIVE</p>
+                <h2>The community is SUPPORTIVE</h2>
                 <section>
                     <h3>COVID Information</h3>
                 </section>
