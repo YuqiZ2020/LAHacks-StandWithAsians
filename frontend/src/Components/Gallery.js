@@ -5,6 +5,7 @@ import "./Gallery.css"
 
 const FirebaseFileUpload = () => {
     const [image, setImage] = useState(null);
+    const [progress, setProgress] = useState(0);
     const types = ["image/png", "image/jpeg"];
     const handleChange = e => {
         let selected = e.target.files[0];
@@ -19,7 +20,10 @@ const FirebaseFileUpload = () => {
         const uploadTask = storage.ref(`images/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
-            snapshot => { },
+            snapshot => {
+                const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+                setProgress(progress);
+            },
             error => {
                 console.log(error);
             },
@@ -53,8 +57,8 @@ const FirebaseFileUpload = () => {
                 <span>Select Image</span>
             </label>
             { image && <span>{image.name}</span>}
-            <button className="upload" onClick={handleUpload}> Upload </button>
-
+            <button className="upload" onClick={handleUpload}> Upload </button>            
+            <progress value={progress} max="100"/>
         </div>
     )
 };
