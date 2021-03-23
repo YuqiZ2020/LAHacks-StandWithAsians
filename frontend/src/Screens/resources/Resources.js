@@ -1,5 +1,6 @@
 import React from 'react';
-import Collapsible from 'react-collapsible';import "./Resources.css"
+import Collapsible from 'react-collapsible';
+import "./Resources.css"
 
 export default class Resources extends React.Component {
     render() {

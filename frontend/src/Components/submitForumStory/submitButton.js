@@ -38,7 +38,11 @@ const SubmitButton = () => {
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
+        footer={[
+         
+        ]}
       >
+        
         
         <Form/>
       </Modal>

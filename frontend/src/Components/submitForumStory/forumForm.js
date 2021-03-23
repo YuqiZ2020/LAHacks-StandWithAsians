@@ -1,15 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './forumForm.css';
 import { Form, Input, Button, Select } from 'antd';
 
 
-
 const { Option } = Select;
 const layout = {
   labelCol: {
-    span: 8,
+    span: 4,
   },
   wrapperCol: {
     span: 16,
@@ -22,6 +21,10 @@ const tailLayout = {
   },
 };
 
+
+
+
+
 class SubmitForm extends React.Component {
   formRef = React.createRef();
   
@@ -33,6 +36,10 @@ class SubmitForm extends React.Component {
     this.formRef.current.resetFields();
   };
 
+
+
+
+  
   
 
   render() {
@@ -46,20 +53,28 @@ class SubmitForm extends React.Component {
           label="Email"
           rules={[
             {
+              type: 'email',
+              message: 'The input is not valid E-mail!',
+            },
+            {
               required: true,
+              message: 'Please input your E-mail!',
             },
           ]}
         >
-          <Input />
+          <Input/>
+          
         </Form.Item>
 
         {/* name */}
         <Form.Item
-          name="note"
+          name="Name"
           label="Name"
+          tooltip="What do you want others to call you?"
           rules={[
             {
               required: true,
+              message: 'Please input your Name!'
             },
           ]}
         >
@@ -70,10 +85,10 @@ class SubmitForm extends React.Component {
 
 
 
-
+          {/* city or state */}
         <Form.Item
           name="state"
-          label="State"
+          label="State/City"
           rules={[
             {
               required: true,
@@ -140,8 +155,30 @@ class SubmitForm extends React.Component {
           }
         </Form.Item>
 
+          {/* stories */}
+          {/* name */}
+          <Form.Item
+              name="Story"
+              label="Story"
+              
+              rules={[
+                {
+                  required: true,
+                  message: 'Please share your story!'
+                },
+              ]}
+            >
+          <Input.TextArea />
+          </Form.Item>
 
 
+
+
+
+
+
+
+          {/* button */}
         <Form.Item {...tailLayout}>
           <Button type="primary" htmlType="submit">
             Submit
