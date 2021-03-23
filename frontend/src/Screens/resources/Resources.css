@@ -1,5 +1,12 @@
+h2
+{
+  font-family: "Permanent Marker", fantasy;
+  font-weight: 900;
+  font-size: large;
+}
+
 h3
 {
-  font-family: fantasy;
+  font-family: "meriweather", sans-serif;
   font-weight: 800;
 }
