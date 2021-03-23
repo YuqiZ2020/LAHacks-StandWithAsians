@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './forumForm.css';
 import { Form, Input, Button, Select } from 'antd';
-
-
-
+import {db} from '../../firebase'
+const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
 const { Option } = Select;
 const layout = {
   labelCol: {
@@ -24,16 +23,30 @@ const tailLayout = {
 
 class SubmitForm extends React.Component {
   formRef = React.createRef();
-  
   onFinish = (values) => {
     console.log(values);
+    db.collection("forum").add({
+      email: values.email,
+      name: values.name,
+      state: values.state,
+      content: values.content,
+      verified: false,
+  })
+  .then(() => {
+      console.log("Document successfully written!");
+  })
+  .catch((error) => {
+      console.error("Error writing document: ", error);
+  }); 
+    
+    this.formRef.current.resetFields();
   };
 
   onReset = () => {
     this.formRef.current.resetFields();
   };
 
-  
+
 
   render() {
     return (
@@ -42,7 +55,7 @@ class SubmitForm extends React.Component {
         
         {/* email */}
         <Form.Item
-          name="note"
+          name="email"
           label="Email"
           rules={[
             {
@@ -55,7 +68,7 @@ class SubmitForm extends React.Component {
 
         {/* name */}
         <Form.Item
-          name="note"
+          name="name"
           label="Name"
           rules={[
             {
@@ -84,24 +97,10 @@ class SubmitForm extends React.Component {
             placeholder="Select your state"
             allowClear
           >
-            <Option value="Alabama">Alabama</Option>
-            <Option value="Alaska">Alaska</Option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            <Option value="other">other</Option>
+          {states.map((state, index)=>(
+            <Option key = {index} value={state}>{state}</Option>
+          ))}
+          <Option value="other">other</Option>
           </Select>
 
 
@@ -117,6 +116,19 @@ class SubmitForm extends React.Component {
 
 
 
+        </Form.Item>
+
+        {/* content */}
+        <Form.Item
+          name="content"
+          label="Your Story"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
         </Form.Item>
 
         <Form.Item
