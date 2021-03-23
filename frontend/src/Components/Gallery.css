@@ -59,11 +59,12 @@ label{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 40px;
 }
 
 .image-grid {
     width: 30vw;
     height: 30vw;
     object-fit: cover;
+    border-radius: 10px;
 }
