@@ -5,8 +5,6 @@ import './newsMap.css'
 
 function NewsMap({ data }) {
 
-
-
   return (
     <div>
       <h1 className="head__text">News </h1>

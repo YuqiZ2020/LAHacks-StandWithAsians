@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <div className='title'>
          title
-
       </div>
       <Navbar />
     </div>

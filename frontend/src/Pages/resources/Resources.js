@@ -5,7 +5,7 @@ import "./Resources.css"
 export default class Resources extends React.Component {
     render() {
         return (
-            <div>
+            <div className="resources">
                 <h2>The community is SUPPORTIVE</h2>
                 <Collapsible trigger="COVID INFORMATION">
                 </Collapsible>

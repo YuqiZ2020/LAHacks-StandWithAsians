@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     root: {
         maxWidth: 360,
         minWidth: 300,
-        margin: 20,
+        margin: 20
     },
     media: {
         height: 155,
@@ -45,7 +45,7 @@ function NewsCard({ data }) {
                             {data.content}
                         </Typography>
                     </CardContent>
-                    
+
                 </CardActionArea>
                 <CardActions>
                     {/* <Button size="small" color="primary">
