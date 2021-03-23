@@ -1,0 +1,26 @@
+.forum{
+    flex:1;
+    width:95%;
+    margin: 0px auto;
+     
+}
+
+.stories{
+    max-width:80%;
+    float:left;
+    /* background-color: aquamarine; */
+}
+
+.submitButton{
+    max-width: 20%;
+    
+    float:right;
+    /* background-color: blueviolet; */
+}
+
+.stats{
+    font-size: xx-large;
+    background-color: black;
+    color:white;
+    text-align: center;
+}

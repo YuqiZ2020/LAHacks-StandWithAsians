@@ -1,0 +1,33 @@
+.display-window {
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.image-list {
+    width: 250vw;
+    height: 30vw;
+    animation: 20s picture-scroll infinite;
+}
+
+.image-list>img {
+    display: inline;
+    width: 50vw;
+    height: 30vw;
+    object-fit:cover;
+}
+
+@keyframes picture-scroll {
+    0% {};
+    2% {transform: translateX(0)}
+    20% {transform: translateX(0)}
+    22% {transform: translateX(-50vw)}
+    40% {transform: translateX(-50vw)}
+    42% {transform: translateX(-100vw)}
+    60% {transform: translateX(-100vw)}
+    62% {transform: translateX(-150vw)}
+    80% {transform: translateX(-150vw)}
+    82% {transform: translateX(-200vw)}
+    100% {transform: translateX(-200vw)}
+}
