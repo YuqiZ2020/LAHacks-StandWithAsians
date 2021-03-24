@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './forumForm.css';
 import { Form, Input, Button, Select, Checkbox } from 'antd';
+import uuid from 'react-uuid'
 import { db } from '../../firebase'
 const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Federated States of Micronesia', 'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Marshall Islands', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio', 'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
 const { Option } = Select;
@@ -26,15 +27,19 @@ class SubmitForm extends React.Component {
     Anony : false
   }
   formRef = React.createRef();
+
   onFinish = (values) => {
     console.log(values);
+    console.log(this.state.Anony)
     db.collection("forum").add({
       email: values.email,
       name: this.state.Anony ? "Anonymous": values.name,
+      namePhoto:"https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-512.png",
       state: values.state,
       customizeState: values.customizeState ? values.customizeState: "",
       content: values.content,
       verified: false,
+      id: uuid()
     })
       .then(() => {
         console.log("Document successfully written!");
@@ -93,10 +98,12 @@ class SubmitForm extends React.Component {
           ]}
         >
           <Input disabled = {this.state.Anony}/>
-          <Checkbox checked = {this.state.Anony} onChange = {()=>{this.onToggleAnony(); }}>Anonymous</Checkbox>          
+                    
           
         </Form.Item>
-
+        <Checkbox 
+        checked = {this.state.Anony} 
+        onChange = {()=>{this.onToggleAnony(); }}>Anonymous</Checkbox>
 
 
 

@@ -67,6 +67,16 @@ const useStyles = makeStyles({
     },
 });
 
+const state = (data) =>{
+    if (data.state == "other"){
+        return data.customizeState
+    }else{
+        return data.state
+    }
+    
+}
+
+
 function ForumCard({ data }) {
     const classes = useStyles();
     return (
@@ -87,7 +97,7 @@ function ForumCard({ data }) {
 
                     <CardContent className={classes.nameCity}>
                         <Typography  variant="h7" component="h5">
-                            {data.name} from {data.city}
+                            {data.name} from {state(data)}
                         </Typography>
                     </CardContent>
 
