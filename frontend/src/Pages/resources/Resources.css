@@ -10,7 +10,7 @@ h2{
 }
 
 .Collapsible__trigger{
-  font-family: "meriweather", sans-serif;
+  font-family: monospace;
   font-weight: 800;
   font-size: 40px;
 }
