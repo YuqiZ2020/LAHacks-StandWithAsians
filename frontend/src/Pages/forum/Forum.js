@@ -39,7 +39,7 @@ export default function Forum() {
                 </div>
 
                 <div className="stats">
-                    <p>XXX people from XXX cities have shared their stories</p>
+                    <p>XXX people have shared their stories</p>
                 </div>
 
             </div>
