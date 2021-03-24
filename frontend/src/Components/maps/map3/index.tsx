@@ -34,7 +34,7 @@ const Map3: React.FC = () => {
     
     seriesField: '',
     legend: false,
-    color:'#e63946',
+    color:'#457b9d',
    
   };
   return <Column {...config} />;
