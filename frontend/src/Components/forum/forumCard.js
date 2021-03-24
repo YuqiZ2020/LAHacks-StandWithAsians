@@ -17,63 +17,64 @@ const useStyles = makeStyles({
     newsCard: {
         display: 'inline-flex',
         // backgroundColor:'black',
-        flexDirection:'column',
-        marginLeft:5,
+        flexDirection: 'column',
+        marginLeft: 5,
+        width: 250,
     },
     root: {
         maxWidth: '100%',
         minWidth: '80%',
         margin: 20,
-        padding:20,
-        backgroundColor:'white',
-    
+        padding: 20,
+        backgroundColor: 'white',
+
     },
     media: {
         height: 30,
-        width:30,
-        
+        width: 30,
+
         // backgroundColor:'blue',
-        float:'left',
+        float: 'left',
     },
-    name:{
-        
-        flex:1,
-        display:'flex',
-        width:'100%',
-        height:30,
+    name: {
+
+        flex: 1,
+        display: 'flex',
+        width: '100%',
+        height: 30,
         // backgroundColor:'green'
-       
+
     },
-    nameCity:{
-        minHeight:30,
-        maxHeight:30,
-        display:'flex',
-        flex:1,
+    nameCity: {
+        minHeight: 30,
+        maxHeight: 30,
+        display: 'flex',
+        flex: 1,
         // justifyContent:'center',
         // alignItems:'center',
-        padding:0,
-        paddingLeft:10,
-        paddingTop:5,
+        padding: 0,
+        paddingLeft: 10,
+        paddingTop: 5,
         // backgroundColor:'red',
-        
+
     },
-    content:{
+    content: {
         // marginTop:-20,
         // backgroundColor:'pink',
-        marginLeft:'-16px',
-        
-        
+        marginLeft: '-16px',
+
+
         // paddingLeft:-10,
     },
 });
 
-const state = (data) =>{
-    if (data.state == "other"){
+const state = (data) => {
+    if (data.state == "other") {
         return data.customizeState
-    }else{
+    } else {
         return data.state
     }
-    
+
 }
 
 
@@ -89,23 +90,23 @@ function ForumCard({ data }) {
 
                     {/* name section */}
                     <div className={classes.name}>
-                    <CardMedia
-                        className={classes.media}
-                        image={data.namePhoto}
-                        title={data.title}
-                    />
+                        <CardMedia
+                            className={classes.media}
+                            image={data.namePhoto}
+                            title={data.title}
+                        />
 
-                    <CardContent className={classes.nameCity}>
-                        <Typography  variant="h7" component="h5">
-                            {data.name} from {state(data)}
-                        </Typography>
-                    </CardContent>
+                        <CardContent className={classes.nameCity}>
+                            <Typography variant="h7" component="h5">
+                                {data.name} from {state(data)}
+                            </Typography>
+                        </CardContent>
 
                     </div>
 
                     <CardContent>
-                        
-                        <Typography className={classes.content} variant="body3"  component="p">
+
+                        <Typography className={classes.content} variant="body3" component="p">
                             {data.content}
                         </Typography>
                     </CardContent>

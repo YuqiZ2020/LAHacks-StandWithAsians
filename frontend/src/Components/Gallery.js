@@ -14,6 +14,9 @@ const FirebaseFileUpload = () => {
             setImage(selected);
         } else {
             setImage(null);
+            if (selected) {
+                alert("Invalid file type!");
+            }
         }
     }
     const handleUpload = () => {
@@ -48,6 +51,7 @@ const FirebaseFileUpload = () => {
                     });
             }
         )
+        setImage(null);
     };
     console.log("img", image);
 

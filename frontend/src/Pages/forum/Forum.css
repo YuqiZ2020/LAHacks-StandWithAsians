@@ -69,9 +69,10 @@
     /* background-color:chartreuse; */
 }
 
-.submitButton{
-    max-width: 20%;
-    
+.submit-container{
+    width: 20%;
+    position: absolute;
+    right: 20px;
     float:right;
     /* background-color: blueviolet; */
 }
@@ -83,12 +84,13 @@
 }
 
 .stats{
-    font-size: 60px;
+    font-size: 2rem;
     background-color: darkorange;
     /* color:white; */
     text-align: center;
     width:95%;
-    margin-top:10;
+    /* margin-top:10px; */
+    /* margin-right:20px; */
     font-family: 'Russo One', sans-serif; 
 }
 

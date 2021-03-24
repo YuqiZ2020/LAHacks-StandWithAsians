@@ -75,12 +75,12 @@ export default function Forum() {
 
 
 
-                <div className="submitButton">
+                <div className="submit-container">
                     <div className='submit'>
                         <SubmitButton />
                     </div>
                     <div className="stats">
-                        <b>XXX people from XXX cities have shared their stories</b>
+                        <p>XXX people from XXX cities have shared their stories</p>
                     </div>
                 </div>
 
@@ -88,9 +88,13 @@ export default function Forum() {
 
 
             </div>
+            <div className='forumT'>Data</div>
+            <div className='map-bottom'>
+                <div className='mapTitle'>Ethnicity of Respondants (N = 3,795) of Discriminations against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
 
+                {/* <Map3/> */}
+            </div>
 
-            {/* <Map3/> */}
         </div>
            
         
