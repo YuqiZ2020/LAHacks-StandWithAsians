@@ -18,39 +18,64 @@ const useStyles = makeStyles({
         display: 'inline-flex',
         // backgroundColor:'black',
         flexDirection:'column',
-        marginLeft:25,
+        marginLeft:5,
     },
     root: {
-        maxWidth: 400,
-        minWidth: 300,
+        maxWidth: '100%',
+        minWidth: '80%',
         margin: 20,
         padding:20,
         backgroundColor:'white',
-        // border:'solid',
+    
     },
     media: {
-        height: 20,
-        width:20,
+        height: 30,
+        width:30,
+        
         // backgroundColor:'blue',
         float:'left',
     },
     name:{
-        // backgroundColor:'red',
+        
         flex:1,
-        // marginBottom:30,
+        display:'flex',
+        width:'100%',
+        height:30,
+        // backgroundColor:'green'
+       
     },
     nameCity:{
-        height:20,
-        paddingLeft:30,
+        minHeight:30,
+        maxHeight:30,
+        display:'flex',
+        flex:1,
+        // justifyContent:'center',
+        // alignItems:'center',
+        padding:0,
+        paddingLeft:10,
         paddingTop:5,
+        // backgroundColor:'red',
         
-        // margin:0,
-        // float:'right',
     },
     content:{
-        marginTop:-20,
+        // marginTop:-20,
+        // backgroundColor:'pink',
+        marginLeft:'-16px',
+        
+        
+        // paddingLeft:-10,
     },
 });
+
+const state = (data) =>{
+    if (data.state == "other"){
+        return data.customizeState
+    }else{
+        return data.state
+    }
+    
+}
+
 
 function ForumCard({ data }) {
     const classes = useStyles();
@@ -71,8 +96,8 @@ function ForumCard({ data }) {
                     />
 
                     <CardContent className={classes.nameCity}>
-                        <Typography gutterBottom variant="h7" component="h5">
-                            {data.name} from {data.city}
+                        <Typography  variant="h7" component="h5">
+                            {data.name} from {state(data)}
                         </Typography>
                     </CardContent>
 

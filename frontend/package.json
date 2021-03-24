@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/charts": "^1.0.21",
     "@material-ui/core": "^4.11.3",
     "antd": "^4.14.1",
     "axios": "^0.21.1",
@@ -14,13 +15,16 @@
     "react-bootstrap": "^1.5.2",
     "react-collapsible": "^2.8.3",
     "react-dom": "^17.0.1",
+    "react-masonry-component": "^6.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-twitter-embed": "^3.0.3",
+    "react-uuid": "^1.0.2",
     "request": "^2.88.2",
     "socket.io": "^4.0.0",
     "socket.io-client": "^4.0.0",
     "twit": "^2.2.11",
+    "typescript": "^4.2.3",
     "util": "^0.12.3"
   },
   "scripts": {
@@ -34,6 +38,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^3"
   },
   "browserslist": {
     "production": [
