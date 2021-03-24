@@ -5,6 +5,47 @@
     /* background-color: black; */
 }
 
+.maps{
+    flex:1;
+    display: flex;
+    width:95%;
+    /* height:100; */
+    margin:0 auto;
+    /* float:left; */
+    /* background-color: darkorange; */
+
+}
+
+.forum-title{
+    font-family: 'Merriweather', serif;
+    display:block;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.maps > div {
+    width: 100%;
+  }
+
+.mapTitle{
+    display: flex;
+    padding:10px;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif; 
+}
+
+.forumT{
+    display:block;
+    /* background-color: red; */
+    width:90%;
+    font-family: 'Russo One', sans-serif; 
+    margin:0 auto;
+    font-size:30px;
+}
+
 .stories-container{
     display: flex;
     width:100%;
@@ -37,6 +78,8 @@
 .submit{
     width:95%;
     margin-bottom: 20;
+    margin-top: 10;
+    padding-top: 10;
 }
 
 .stats{
@@ -47,4 +90,11 @@
     width:95%;
     margin-top:10;
     font-family: 'Russo One', sans-serif; 
+}
+
+.map-bottom{
+    width:90%;
+    /* background-color: gray; */
+    margin:0 auto;
+    
 }
