@@ -7,7 +7,7 @@ export default class Resources extends React.Component {
     return (
       <div className="resources">
         <h2>The community is SUPPORTIVE</h2>
-        <Collapsible trigger="COVID INFORMATION">
+        <Collapsible trigger="+ COVID INFORMATION" triggerWhenOpen="- COVID INFORMATION">
           <p>
             COVID News around the world
                   </p>
@@ -18,12 +18,12 @@ export default class Resources extends React.Component {
           <br />
           <span><small>Source:arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c</small></span>
         </Collapsible>
-        <Collapsible trigger="SUPPORT">
+        <Collapsible trigger="+ SUPPORT" triggerWhenOpen="- SUPPORT">
           <p>
             Mental support
                   </p>
         </Collapsible>
-        <Collapsible trigger="EMERGENCY REPORT">
+        <Collapsible trigger="+ EMERGENCY REPORT" triggerWhenOpen="- EMERGENCY REPORT">
           <p>
             If you encounter emergency situation, please post and notify people around.
                   </p>
