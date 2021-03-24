@@ -20,14 +20,16 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         marginLeft: 5,
         width: 250,
+
     },
     root: {
-        maxWidth: '100%',
-        minWidth: '80%',
+        width: 250,
+        height: 250,
+        overflowY: "scroll",
         margin: 20,
         padding: 20,
         backgroundColor: 'white',
-
+        borderRadius: "10px"
     },
     media: {
         height: 30,
