@@ -69,7 +69,7 @@ const FirebaseFileUpload = () => {
                 <progress className="progress-bar" value={progress} max="100" />
             ) : null}
             { (toggle && progress >= 100) ? (
-                <span>Upload Complete</span>
+                alert("Upload Complete! Please wait for admin approval")
             ) : null}
             <br />
 
