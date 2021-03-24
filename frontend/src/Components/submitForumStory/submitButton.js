@@ -29,9 +29,12 @@ const SubmitButton = () => {
 
   return (
     <>
-      <Button className="button" type="primary" size = "large"onClick={showModal} block>
+      {/* <Button className="button" type="primary" size = "large"block>
         Share Your Story!
-      </Button>
+      </Button> */}
+      <button className='button'onClick={showModal} >
+          <div><h2>➕ Share Your Stories ➕</h2></div>
+      </button>
       <Modal
         title="Share Your Stories"
         visible={visible}
