@@ -31,3 +31,8 @@ h2{
   font-family: "meriweather", sans-serif;
   font-size: large;
 }
+
+.map{
+  width: 60%;
+  height: 700px;
+}
