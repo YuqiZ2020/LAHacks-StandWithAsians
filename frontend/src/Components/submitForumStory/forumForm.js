@@ -32,6 +32,7 @@ class SubmitForm extends React.Component {
       email: values.email,
       name: this.state.Anony ? "Anonymous": values.name,
       state: values.state,
+      customizeState: values.customizeState ? values.customizeState: "",
       content: values.content,
       verified: false,
     })
@@ -92,7 +93,7 @@ class SubmitForm extends React.Component {
           ]}
         >
           <Input disabled = {this.state.Anony}/>
-          <Checkbox onChange = {()=>{this.onToggleAnony(); }}>Anonymous</Checkbox>          
+          <Checkbox checked = {this.state.Anony} onChange = {()=>{this.onToggleAnony(); }}>Anonymous</Checkbox>          
           
         </Form.Item>
 
