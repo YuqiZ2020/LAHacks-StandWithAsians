@@ -36,7 +36,8 @@ const FirebaseFileUpload = () => {
                     .then(url => {
                         console.log(url);
                         db.collection("gallery").add({
-                            url: url
+                            url: url,
+                            review: false
                         })
                             .then((docRef) => {
                                 console.log("Document written with ID: ", docRef.id);
@@ -67,6 +68,9 @@ const FirebaseFileUpload = () => {
             { (toggle && progress < 100) ? (
                 <progress className="progress-bar" value={progress} max="100" />
             ) : null}
+            { (toggle && progress >= 100) ? (
+                <span>Upload Complete</span>
+            ) : null}
             <br />
 
         </div>
@@ -87,7 +91,9 @@ export default class Gallery extends React.Component {
                 const urls = []
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    urls.push(data);
+                    if (data.review) {
+                        urls.push(data.url);
+                    }
                 })
                 this.setState({ urls: urls })
                 console.log(this.state.urls)
@@ -100,7 +106,7 @@ export default class Gallery extends React.Component {
             console.log(url);
             return (
                 <div key={index} className="column">
-                    <img className="image-grid" src={url.url} />
+                    <img className="image-grid" src={url} />
                 </div>
             )
         })
