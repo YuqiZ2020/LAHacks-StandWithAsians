@@ -57,13 +57,16 @@
 
 .fixedSubmit{
     position:sticky;
+    /* background-color: blue; */
+    opacity:1;
+    top:0;
 }
 
 .submit{
  
     display:flex;
     justify-content: center;
-    height:200px;
+    height:150px;
 }
 
 .stats{
