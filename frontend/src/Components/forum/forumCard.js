@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Paper from '@material-ui/core/Paper';
-
+import Disqus from "disqus-react"
 //material ui card
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,6 +12,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { FormHelperText } from "@material-ui/core";
 import { AutoComplete } from 'antd';
+
 
 const useStyles = makeStyles({
     newsCard: {
@@ -79,6 +80,12 @@ const state = (data) =>{
 
 function ForumCard({ data }) {
     const classes = useStyles();
+    const disqusShortname = "stop-asian-hate"
+    const disqusConfig = {
+      url: "http://localhost:3000",
+      identifier: "article-id",
+      title: "Title of Your Article"
+    }
     return (
         <div className={classes.newsCard}>
 

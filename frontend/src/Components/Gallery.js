@@ -14,6 +14,9 @@ const FirebaseFileUpload = () => {
             setImage(selected);
         } else {
             setImage(null);
+            if (selected) {
+                alert("Invalid file type! Please select an image!");
+            }
         }
     }
     const handleUpload = () => {
@@ -48,6 +51,9 @@ const FirebaseFileUpload = () => {
                     });
             }
         )
+        if (progress >= 100) {
+            setToggle(false);
+        }
     };
     console.log("img", image);
 
@@ -59,17 +65,17 @@ const FirebaseFileUpload = () => {
                 <input type="file" onChange={handleChange} />
                 <span>+</span>
             </label>
-            { image ? (
+            { image && !toggle ? (
                 <div>
                     <span className="file-chosen">{image.name}</span>
                     <button className="upload" onClick={handleUpload}> OK </button>
                 </div>
-            ) : <span className="file-chosen">Please select a jpeg or png file</span>}
+            ) : null}
             { (toggle && progress < 100) ? (
                 <progress className="progress-bar" value={progress} max="100" />
             ) : null}
-            { (toggle && progress >= 100) ? (
-                alert("Upload Complete! Please wait for admin approval")
+            { toggle && progress >= 100 ? (
+                alert("Upload complete! Please wait for admin approval.")
             ) : null}
             <br />
 

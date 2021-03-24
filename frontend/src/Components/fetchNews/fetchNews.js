@@ -10,7 +10,7 @@ export default class fetchNews extends Component {
         const url = 'https://newsapi.org/v2/everything?' +
         'q=StopAsianHate&' +
         'from=2021-03-01&' +
-        // 'language=en$' + 
+        'language=en&' + 
         'sortBy=publishedAt&' +
         'pageSize=11&' +
         // 'country=us&' +

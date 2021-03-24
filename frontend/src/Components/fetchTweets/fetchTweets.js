@@ -1,3 +1,5 @@
+// import React, { Component } from 'react'
+
 // const Twit = require('twit')
 // // https://github.com/ttezel/twit
 // // a library to use twitter api
@@ -16,24 +18,53 @@
 // const accessTokenSecret = 'jT0wctsZZNLNIVm61gVQf1F6kZdLcEwzas1Is3OULP8dE'
 
 
-// // use twit to fetch data
 // var T = new Twit({
-//   consumer_key:         apikey,
-//   consumer_secret:      apiSecretKey,
-//   access_token:         accessToken,
-//   access_token_secret:  accessTokenSecret,
+//   consumer_key: apikey,
+//   consumer_secret: apiSecretKey,
+//   access_token: accessToken,
+//   access_token_secret: accessTokenSecret,
 // });
 
 
-// (async () => {
+
+// export default class fetchTweets extends Component {
+
+//   constructor(props) {
+//     super(props);
+//     // use twit to fetch data
+    
+
+//   }
+//   componentDidMount() {
+
+//     // (async () => {
 
 //     // get recent tweets about #stop asian hate
-//     T.get('search/tweets', { q: '#StopAsianHate since:2020-01-01',result_type:'popular', count: 1,lang:'en'}, function(err, data, response) {
+//     T.get('search/tweets', { q: '#StopAsianHate since:2020-01-01', result_type: 'popular', count: 1, lang: 'en' }, function (err, data, response) {
 //       const tweets = data.statuses
 //       console.log(tweets);
 //     })
 
-// })();
+//     // })();
+//   }
+
+
+
+//   render() {
+//     return (
+//       <div>
+
+//       </div>
+//     )
+//   }
+// }
+
+
+
+
+
+
+
 
 
 

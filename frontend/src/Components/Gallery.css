@@ -58,13 +58,13 @@ label input{
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: calc(4vw - 14px);
 }
 
 .image-grid {
-    width: 30vw;
-    height: 30vw;
+    width: 22vw;
+    height: 22vw;
     object-fit: cover;
     border-radius: 10px;
 }
