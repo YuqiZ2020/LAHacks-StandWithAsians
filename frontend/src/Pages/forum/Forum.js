@@ -3,8 +3,8 @@ import "./Forum.css"
 import ForumMap from '../../Components/forum/forumMap'
 import data1 from '../../Components/forum/forumDummy1.js'
 import data2 from '../../Components/forum/forumDummy2.js'
-// import Map1 from '../../Components/maps/map1'
-// import Map3 from '../../Components/maps/map3' 
+import Map1 from '../../Components/maps/map1'
+import Map3 from '../../Components/maps/map3' 
 import {db} from "../../firebase"
 
 
@@ -41,7 +41,7 @@ export default function Forum() {
             <div className='mapTitle'>Types of Discrimination(N = 3,795) against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
             <div className='maps'>
                 
-                {/* <Map1/> */}
+                <Map1/>
 
             </div>
 
@@ -92,7 +92,7 @@ export default function Forum() {
             <div className='map-bottom'>
             <div className='mapTitle'>Ethnicity of Respondants (N = 3,795) of Discriminations against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
 
-                    {/* <Map3/> */}
+                    <Map3/>
             </div>
            
         </div>
