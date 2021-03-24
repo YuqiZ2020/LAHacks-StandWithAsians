@@ -52,9 +52,9 @@ const useStyles = makeStyles({
         flex: 1,
         // justifyContent:'center',
         // alignItems:'center',
-        padding: 0,
         paddingLeft: 10,
-        paddingTop: 5,
+        paddingTop: 0,
+        fontSize: 0.8 + "rem"
         // backgroundColor:'red',
 
     },
@@ -62,8 +62,7 @@ const useStyles = makeStyles({
         // marginTop:-20,
         // backgroundColor:'pink',
         marginLeft: '-16px',
-
-
+        fontFamily: 'Merriweather'
         // paddingLeft:-10,
     },
 });
@@ -97,7 +96,7 @@ function ForumCard({ data }) {
                         />
 
                         <CardContent className={classes.nameCity}>
-                            <Typography variant="h7" component="h5">
+                            <Typography variant="inherit" component="p">
                                 {data.name} from {state(data)}
                             </Typography>
                         </CardContent>
@@ -106,7 +105,7 @@ function ForumCard({ data }) {
 
                     <CardContent>
 
-                        <Typography className={classes.content} variant="body3" component="p">
+                        <Typography className={classes.content} component="p">
                             {data.content}
                         </Typography>
                     </CardContent>
