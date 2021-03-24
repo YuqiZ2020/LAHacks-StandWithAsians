@@ -2,18 +2,17 @@
   margin: 20px;
 }
 
-h2
-{
+h2{
   font-family: "Permanent Marker", fantasy;
   font-weight: 900;
-  font-size: large;
+  font-size: 50px;
   text-align: center;
 }
 
-h3
-{
+.Collapsible__trigger{
   font-family: "meriweather", sans-serif;
   font-weight: 800;
+  font-size: 40px;
 }
 
 .Collapsible {
@@ -26,4 +25,9 @@ h3
   text-align: left;
   outline: none;
   font-size: 15px;
+}
+
+.Collapsible__contentInner{
+  font-family: "meriweather", sans-serif;
+  font-size: large;
 }
