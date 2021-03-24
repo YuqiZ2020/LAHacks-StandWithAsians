@@ -38,7 +38,7 @@ export default function Forum() {
 
             {/* Top chart in forum */}
 
-            <div className='mapTitle'>Types of Discrimination(N = 3,795) against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
+            {/* <div className='mapTitle'>Types of Discrimination(N = 3,795) against Asians (Mar 19, 2020 to Feb 28, 2021)</div> */}
             <div className='maps'>
 
                 {/* <Map1/> */}
@@ -88,14 +88,15 @@ export default function Forum() {
 
 
             </div>
-            <div className='forumT'>Data</div>
+
+            {/* <div className='forumT'>Data</div>
             <div className='map-bottom'>
                 <div className='mapTitle'>Ethnicity of Respondants (N = 3,795) of Discriminations against Asians (Mar 19, 2020 to Feb 28, 2021)</div>
 
-                {/* <Map3/> */}
-            </div>
+                <Map3/> */}
+        {/* </div> */}
 
-        </div>
+        </div >
            
         
 

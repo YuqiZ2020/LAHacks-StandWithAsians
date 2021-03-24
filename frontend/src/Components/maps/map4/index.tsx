@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from '@ant-design/charts';
 
-const Map3: React.FC = () => {
+const Map4: React.FC = () => {
   var data = [
     {
       type: '1996',
@@ -118,4 +118,4 @@ const Map3: React.FC = () => {
   return <Line {...config} />;
 };
 
-export default Map3;
+export default Map4;
