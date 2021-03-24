@@ -51,6 +51,7 @@ const FirebaseFileUpload = () => {
                     });
             }
         )
+        setImage(null);
     };
     console.log("img", image);
 
