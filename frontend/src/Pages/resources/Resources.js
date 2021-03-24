@@ -27,4 +27,5 @@ export default class Resources extends React.Component {
                 </Collapsible>
             </div>        
         );
+    }
  }
