@@ -56,19 +56,24 @@
 }
 
 .fixedSubmit{
-    position:fixed;
+    /* position:fixed;
     right: 0;
     height: 100px;
-    width: 250px;
+    width: 250px; */
+    position:sticky;
+    /* background-color: blue; */
+    opacity:1;
+    top:0;
 }
 
 .submit{ 
     display:flex;
     justify-content: center;
-    width: 250px;
+    /* width: 250px;
     height:100px; 
     background-color: bisque;   
-    border-radius: 20px;
+    border-radius: 20px; */
+    height:150px;
 }
 
 .stats{
