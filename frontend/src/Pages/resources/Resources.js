@@ -15,6 +15,7 @@ export default class Resources extends React.Component {
                     COVID Map here.
                   </p>
                   <iframe className="map" width="650" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="2019-nCoV" src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" ></iframe>  
+                  <br>
                   <span><small>Source:arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c</small></span>
                 </Collapsible>
                 <Collapsible trigger="SUPPORT">
