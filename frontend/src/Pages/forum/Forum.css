@@ -70,32 +70,30 @@
 }
 
 .submit-container{
-    width: 20%;
+    width: 200px;
     position: absolute;
     right: 20px;
     float:right;
     /* background-color: blueviolet; */
 }
 .submit{
-    width:95%;
+ 
     margin-bottom: 20;
     margin-top: 10;
     padding-top: 10;
 }
 
 .stats{
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: darkorange;
     /* color:white; */
     text-align: center;
-    width:95%;
-    /* margin-top:10px; */
-    /* margin-right:20px; */
+ 
     font-family: 'Russo One', sans-serif; 
 }
 
 .map-bottom{
-    width:90%;
+    /* width:90%; */
     /* background-color: gray; */
     margin:0 auto;
     
