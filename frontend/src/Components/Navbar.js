@@ -22,7 +22,19 @@ export default class Navbar extends React.Component {
                     <nav className="link-container">
                         <Link to="/" className="link">Home</Link>
                         <Link to="/about" className="link">About</Link>
-                        <Link to="/news" className="link">News</Link>
+
+
+                        <div className='link'>
+                        <div className='dd'>
+                            <Link to="/news" className="link">News</Link>
+                            <div class="dropdown-content">
+                                <a href="#news-news">News</a>
+                                <a href="#news-tweets">Tweets</a>
+                                <a href="#news-data">Data</a>
+                                
+                            </div>
+                        </div>
+                        </div>
                         <Link to="/forum" className="link">Forum</Link>
                         <Link to="/gallery" className="link">Gallery</Link>
                         <Link to="/resources" className="link">Resources</Link>

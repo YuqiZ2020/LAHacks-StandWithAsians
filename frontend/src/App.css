@@ -29,7 +29,7 @@
     background-color: black;
     color:white;
     height: 50px;
-    position:sticky;
+    /* position:sticky; */
     display: flex;
     bottom:0;
 }

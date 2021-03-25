@@ -4,6 +4,7 @@ import "./forumMap.css"
 
 
 
+
 function forumMap({ data }) {
 
   return (
