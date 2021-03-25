@@ -7,7 +7,7 @@ import "./News.css"
 import Map2 from '../../Components/maps/map2'
 import Map3 from '../../Components/maps/map3'
 import Map4 from '../../Components/maps/map4'
-
+import PetitionMap from '../../Components/petitions/PetitionMap'
 
 
 export default class News extends React.Component {
@@ -28,6 +28,10 @@ export default class News extends React.Component {
                 {/* tweets */}
                 <div className='forumT' id='news-tweets'>Tweets</div>
                 <FetchTweets />
+
+                {/* change org*/}
+                <div className='forumT' id='news-petitions'>Petitions</div>
+                <PetitionMap />
 
 
 

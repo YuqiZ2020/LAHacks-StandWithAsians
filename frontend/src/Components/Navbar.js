@@ -31,6 +31,7 @@ export default class Navbar extends React.Component {
                             <div class="dropdown-content">
                                 <a href="#news-news">News</a>
                                 <a href="#news-tweets">Tweets</a>
+                                <a href="#news-petitions">Petitions</a>
                                 <a href="#news-data">Data</a>
                                 
                             </div>
