@@ -2,6 +2,7 @@ const data = [
     {
         "id": "01",
         "city": "San Francisco",
+        "state": "CA",
         "date": "03/27",
         "day_of_wk": "Sat",
         "location": "Saratoga City Hall",
@@ -12,6 +13,7 @@ const data = [
     {
         "id": "02",
         "city": "Chicago",
+        "state": "IL",
         "date": "03/27",
         "day_of_wk": "Sat",
         "location": "2100 S Wentworth Ave",
@@ -22,6 +24,7 @@ const data = [
     {
         "id": "03",
         "city": "Princeton",
+        "state": "NJ",
         "date": "03/27",
         "day_of_wk": "Sat",
         "location": "Palmer Square ",
@@ -32,6 +35,7 @@ const data = [
     {
         "id": "04",
         "city": "Flushing",
+        "state": "NY",
         "date": "03/27",
         "day_of_wk": "Sat",
         "location": "41-17 Main ST",
@@ -42,6 +46,7 @@ const data = [
     {
         "id": "05",
         "city": "Phoenix",
+        "state": "AZ",
         "date": "03/27",
         "day_of_wk": "Sat",
         "location": "Wesley Bolin Memorial Park",
@@ -52,6 +57,7 @@ const data = [
     {
         "id": "06",
         "city": "Montreal",
+        "state": "MON",
         "date": "03/21",
         "day_of_wk": "Sun",
         "location": "Cabot Square, Shaughnessy Village",
@@ -62,6 +68,7 @@ const data = [
     {
         "id": "07",
         "city": "Dallas",
+        "state": "TX",
         "date": "03/21",
         "day_of_wk": "Sun",
         "location": "400 Elm St. Dallas",
@@ -72,6 +79,7 @@ const data = [
     {
         "id": "08",
         "city": "Chandler",
+        "state": "AZ",
         "date": "03/21",
         "day_of_wk": "Sun",
         "location": "Chandler City Hall",
@@ -82,6 +90,7 @@ const data = [
     {
         "id": "09",
         "city": "Portland",
+        "state": "OR",
         "date": "03/20",
         "day_of_wk": "Sat",
         "location": "Waterfront Park at Salmon St and Natio Pkwy",
@@ -92,6 +101,7 @@ const data = [
     {
         "id": "10",
         "city": "Gainesville",
+        "state": "FL",
         "date": "03/20",
         "day_of_wk": "Sat",
         "location": "The Turlington Plaza on UF Campus",
