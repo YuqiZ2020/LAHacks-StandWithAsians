@@ -19,7 +19,7 @@ export default class Resources extends React.Component {
                   </p>
           <iframe className="map" width="650" height="400" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" title="2019-nCoV" src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" ></iframe>
           <br />
-          <span><small style="font-family: "times new roman", sans-serif">Source:arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c</small></span>
+          <span><small>Source:arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c</small></span>
         </Collapsible>
         <Collapsible trigger="+ SUPPORT" triggerWhenOpen="- SUPPORT">
           <p>
