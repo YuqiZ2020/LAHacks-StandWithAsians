@@ -10,3 +10,8 @@
     text-align: center;
     font-family: "Permanent Marker", fantasy;
 }
+
+.button:hover {
+    background-color: black; /* Green */
+    color: white;
+  }
