@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Paper from '@material-ui/core/Paper';
 import Disqus from "disqus-react"
 import { useHistory } from "react-router-dom";
-import Comments from "./forumComments"
 //material ui card
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
@@ -85,12 +84,6 @@ function ForumCard({ data }) {
     let history = useHistory();
     const classes = useStyles();
     const [openComment, setOpenComment] = useState(false)
-    const disqusShortname = "stop-asian-hate"
-    const disqusConfig = {
-      url: "https://stop-asian-hate.disqus.com/"+data.id,
-      identifier: data.id,
-      title: "Title of Your Article"
-    }
     const toggleComment = () =>{
         setOpenComment(!openComment)
     }
@@ -125,17 +118,6 @@ function ForumCard({ data }) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-
-{                openComment && <Disqus.DiscussionEmbed
-                    shortname={disqusShortname}
-                    config={disqusConfig}
-                    showMedia={true}
-                    showParentComment={true}
-                    />}
-                    {/* <Comments /> */}
-
-
-
 
                 <CardActions>
                     <Button size="small" color="primary" onClick = {()=>{history.push('/forum/'+data.realId)}}>
