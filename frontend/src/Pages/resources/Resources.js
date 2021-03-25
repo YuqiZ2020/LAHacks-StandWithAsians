@@ -5,18 +5,6 @@ import "./Resources.css"
 
 const events = data.map( (data)=>{
     return(
-      <table className="eventable">
-        <thead>
-          <tr>
-              <th>DATE</th>
-              <th>TIME</th>
-              <th>STATE</th>
-              <th>CITY</th>
-              <th>LOCATION</th>
-              <th>MAP</th>
-            </tr>
-        </thead>
-        <tbody>
           <tr>
             <td key={data.id}>{data.day_of_wk} {data.date}/{data.year}</td>
             <td key={data.id}>{data.time}</td>
@@ -25,8 +13,6 @@ const events = data.map( (data)=>{
             <td key={data.id}>{data.location}</td>
             <td key={data.id}><a href={data.location_link}>location</a></td>
           </tr>
-        </tbody>
-      </table>
     );
   }
 );
@@ -38,7 +24,19 @@ export default class Resources extends React.Component {
         <h2>The community is SUPPORTIVE</h2>
         <Collapsible trigger="+ EVENTS" triggerWhenOpen="- EVENTS">
           <p>update protests and events here.</p>
-          <div>{events}</div>  
+          <table className="eventable">
+            <thead>
+                <tr>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>STATE</th>
+                    <th>CITY</th>
+                    <th>LOCATION</th>
+                    <th>MAP</th>
+                </tr>
+            </thead> 
+            <tbody>{events}</tbody>
+          </table>
         </Collapsible>
         <Collapsible trigger="+ COVID INFORMATION" triggerWhenOpen="- COVID INFORMATION">
           <p>
