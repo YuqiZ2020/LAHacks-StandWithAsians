@@ -1,0 +1,95 @@
+const data = [
+  {
+    "event_no0": {
+        "city": "San Francisco",
+        "date": "03/27",
+        "day_of_wk": "Sat",
+        "location": "Saratoga City Hall",
+        "location_link": "https://maps.google.com/?q=Saratoga City Hall",
+        "time": "11:00am",
+        "year": "2021"
+    },
+    "event_no1": {
+        "city": "Chicago",
+        "date": "03/27",
+        "day_of_wk": "Sat",
+        "location": "2100 S Wentworth Ave",
+        "location_link": "https://maps.google.com/?q=2100 S Wentworth Ave, Chicago",
+        "time": "2:00pm",
+        "year": "2021"
+    },
+    "event_no2": {
+        "city": "Princeton",
+        "date": "03/27",
+        "day_of_wk": "Sat",
+        "location": "Palmer Square ",
+        "location_link": "https://maps.google.com/?q=Palmer Square ",
+        "time": "1:00PM",
+        "year": "2021"
+    },
+    "event_no3": {
+        "city": "Flushing",
+        "date": "03/27",
+        "day_of_wk": "Sat",
+        "location": "41-17 Main ST",
+        "location_link": "https://maps.google.com/?q=41-17 Main st.",
+        "time": "1:00PM",
+        "year": "2021"
+    },
+    "event_no4": {
+        "city": "Phoenix",
+        "date": "03/27",
+        "day_of_wk": "Sat",
+        "location": "Wesley Bolin Memorial Park",
+        "location_link": "https://maps.google.com/?q=Wesley Bolin Memorial Park @ 1690 W Jefferson St, Phoenix AZ, 85007",
+        "time": "10:00AM",
+        "year": "2021"
+    },
+    "event_no5": {
+        "city": "Montreal",
+        "date": "03/21",
+        "day_of_wk": "Sun",
+        "location": "Cabot Square, Shaughnessy Village",
+        "location_link": "https://maps.google.com/?q=Cabot Square, Shaughnessy Village, Ville-Marie Montreal",
+        "time": "12:50pm",
+        "year": "2021"
+    },
+    "event_no6": {
+        "city": "Dallas",
+        "date": "03/21",
+        "day_of_wk": "Sun",
+        "location": "400 Elm St. Dallas",
+        "location_link": "https://maps.google.com/?q=400 Elm St. Dallas",
+        "time": "7:00pm",
+        "year": "2021"
+    },
+    "event_no7": {
+        "city": "Chandler",
+        "date": "03/21",
+        "day_of_wk": "Sun",
+        "location": "Chandler City Hall",
+        "location_link": "https://maps.google.com/?q=Chandler City Hall front floor @ 175 S Arizona Ave, Chandler, AZ 85225",
+        "time": "6:00PM",
+        "year": "2021"
+    },
+    "event_no8": {
+        "city": "Portland",
+        "date": "03/20",
+        "day_of_wk": "Sat",
+        "location": "Waterfront Park at Salmon St and Natio Pkwy",
+        "location_link": "https://maps.google.com/?q=Waterfront Park at Salmon St and Natio Pkwy",
+        "time": "6:00pm",
+        "year": "2021"
+    },
+    "event_no9": {
+        "city": "Gainesville",
+        "date": "03/20",
+        "day_of_wk": "Sat",
+        "location": "The Turlington Plaza on UF Campus",
+        "location_link": "https://maps.google.com/?q=The Turlington Plaza (by the Century Tower) on UF campus",
+        "time": "7:30pm",
+        "year": "2021"
+    }
+}];
+
+export default data;
