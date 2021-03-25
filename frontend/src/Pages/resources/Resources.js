@@ -8,7 +8,7 @@ const events = data.map( (data)=>{
           <tr>
             <td key={data.id}>{data.day_of_wk} {data.date}/{data.year}</td>
             <td key={data.id}>{data.time}</td>
-            <td key={data.id}>CA</td>
+            <td key={data.id}>{data.state}</td>
             <td key={data.id}>{data.city}</td>
             <td key={data.id}>{data.location}</td>
             <td key={data.id}><a href={data.location_link}>location</a></td>
