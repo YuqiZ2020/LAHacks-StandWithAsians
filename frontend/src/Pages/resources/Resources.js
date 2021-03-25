@@ -7,6 +7,9 @@ export default class Resources extends React.Component {
     return (
       <div className="resources">
         <h2>The community is SUPPORTIVE</h2>
+        <Collapsible trigger="+ EVENTS" triggerWhenOpen="- EVENTS">
+          <p>insert protests and events here.</p>
+        </Collapsible>
         <Collapsible trigger="+ COVID INFORMATION" triggerWhenOpen="- COVID INFORMATION">
           <p>
             COVID News around the world
