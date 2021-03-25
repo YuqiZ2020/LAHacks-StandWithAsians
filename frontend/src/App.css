@@ -7,7 +7,7 @@
     background-color: black;
     color:orange;
     font-weight: 400;
-    height: 100px;
+    height: 100px!important;
     display: flex;
 }
 

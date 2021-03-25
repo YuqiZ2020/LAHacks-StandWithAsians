@@ -20,8 +20,8 @@ export default function Forum() {
         db.collection("forum")
             .get()
             .then(querySnapshot => {
-                const items = querySnapshot.docs.map(doc => doc.data());
-                // console.log(item)
+                const items = querySnapshot.docs.map(doc => {return {...doc.data(), realId:doc.id}});
+                console.log(items)
                 setData(items)
             })
     }
@@ -39,7 +39,7 @@ export default function Forum() {
                 </div>
 
                 <div className="stats">
-                    <p>XXX people from XXX cities have shared their stories</p>
+                    <p>{data.length} people have shared their stories</p>
                 </div>
 
             </div>
@@ -47,7 +47,7 @@ export default function Forum() {
 
 
             <div className='stories-container'>
-                {console.log(data)}
+                {console.log(data.length)}
 
 
                 <div className='stories1'>
@@ -63,3 +63,7 @@ export default function Forum() {
 
     )
 }
+
+
+
+

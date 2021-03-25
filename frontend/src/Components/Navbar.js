@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import About from "./About";
 import Forum from "../Pages/forum/Forum";
+import ForumDiscussion from "../Pages/forum/ForumDiscussion"
 import Gallery from "./Gallery";
 import Home from "./Home";
 import News from "../Pages/news/News";
@@ -43,7 +44,8 @@ export default class Navbar extends React.Component {
                         <Route path="/" exact component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/news" component={News} />
-                        <Route path="/forum" component={Forum} />
+                        <Route exact path="/forum" component={Forum}/>
+                        <Route exact path="/forum/:postId" component={ForumDiscussion}/>
                         <Route path="/gallery" component={Gallery} />
                         <Route path="/resources" component={Resources} />
                         <Route path="/review" component={Review} />
