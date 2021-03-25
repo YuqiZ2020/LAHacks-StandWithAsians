@@ -29,9 +29,9 @@ export default class Navbar extends React.Component {
                         <div className='dd'>
                             <Link to="/news" className="link">News</Link>
                             <div class="dropdown-content">
-                                <a href="#news-news">News</a>
-                                <a href="#news-tweets">Tweets</a>
-                                <a href="#news-petitions">Petitions</a>
+                                <Link to="/news#news-news">News</Link>
+                                <Link to="/news#news-tweets">Tweets</Link>
+                                <Link to="/news#news-petitions">Petitions</Link>
                                 <a href="#news-data">Data</a>
                                 
                             </div>

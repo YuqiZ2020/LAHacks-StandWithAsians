@@ -9,6 +9,7 @@
     font-size: 16px;
     text-align: center;
     font-family: "Permanent Marker", fantasy;
+    transition: 0.4s;
 }
 
 .button:hover {
