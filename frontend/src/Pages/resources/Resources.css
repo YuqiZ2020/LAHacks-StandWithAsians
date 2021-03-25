@@ -42,6 +42,10 @@ td{
   padding: 20px;
 }
 
+th{
+  font-weight: bold;
+}
+
 .map{
   width: 80%;
   height: 700px;
