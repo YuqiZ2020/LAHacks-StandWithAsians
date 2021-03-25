@@ -1,3 +1,24 @@
 .name{
     background-color: aquamarine;
 }
+
+.card-box {
+    width: 250px;
+    height: 250px;
+    overflow-y: scroll!important;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px
+}
+
+.card-box::-webkit-scrollbar-thumb {
+  background-color: rgba(151, 151, 151, 0.452);
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;  
+}
+
+.card-box::-webkit-scrollbar {
+  width: 15px;
+}

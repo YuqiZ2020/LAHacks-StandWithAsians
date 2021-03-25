@@ -29,9 +29,12 @@ const SubmitButton = () => {
 
   return (
     <>
-      <Button className="button" type="primary" size = "large"onClick={showModal} block>
+      {/* <Button className="button" type="primary" size = "large"block>
         Share Your Story!
-      </Button>
+      </Button> */}
+      <button className='button' onClick={showModal} >
+        <div>+ Share Your Stories +</div>
+      </button>
       <Modal
         title="Share Your Stories"
         visible={visible}
@@ -39,12 +42,12 @@ const SubmitButton = () => {
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         footer={[
-         
+
         ]}
       >
-        
-        
-        <Form/>
+
+
+        <Form />
       </Modal>
     </>
   );

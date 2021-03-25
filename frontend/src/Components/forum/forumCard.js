@@ -12,60 +12,39 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { FormHelperText } from "@material-ui/core";
 import { AutoComplete } from 'antd';
+import "./forumCard.css"
 
 const useStyles = makeStyles({
     newsCard: {
         display: 'inline-flex',
-        // backgroundColor:'black',
+        boxSizing: "border-box",
         flexDirection: 'column',
-        marginLeft: 5,
-        width: 250,
-
-    },
-    root: {
-        width: 250,
-        height: 250,
-        overflowY: "scroll",
-        margin: 20,
-        padding: 20,
-        backgroundColor: 'white',
-        borderRadius: "10px"
+        margin: 10,
+        width: 250
     },
     media: {
         height: 30,
         width: 30,
-
-        // backgroundColor:'blue',
         float: 'left',
     },
     name: {
-
         flex: 1,
         display: 'flex',
         width: '100%',
         height: 30,
-        // backgroundColor:'green'
-
     },
     nameCity: {
         minHeight: 30,
         maxHeight: 30,
         display: 'flex',
         flex: 1,
-        // justifyContent:'center',
-        // alignItems:'center',
         paddingLeft: 10,
         paddingTop: 0,
         fontSize: 0.8 + "rem"
-        // backgroundColor:'red',
-
     },
     content: {
-        // marginTop:-20,
-        // backgroundColor:'pink',
         marginLeft: '-16px',
         fontFamily: 'Merriweather'
-        // paddingLeft:-10,
     },
 });
 
@@ -85,10 +64,8 @@ function ForumCard({ data }) {
         <div className={classes.newsCard}>
 
             <Paper elevation={3} />
-            <Card className={classes.root}>
+            <Card className="card-box">
                 <CardActionArea>
-
-
                     {/* name section */}
                     <div className={classes.name}>
                         <CardMedia
@@ -102,29 +79,15 @@ function ForumCard({ data }) {
                                 {data.name} from {state(data)}
                             </Typography>
                         </CardContent>
-
                     </div>
 
                     <CardContent>
-
                         <Typography className={classes.content} component="p">
                             {data.content}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
 
-
-
-
-                <CardActions>
-                    {/* <Button size="small" color="primary">
-                        Share
-                        </Button> */}
-                    {/* <Button size="small" color="primary"
-                        href={data.url}>
-                        Like
-                        </Button> */}
-                </CardActions>
             </Card>
         </div>
     );

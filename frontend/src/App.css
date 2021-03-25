@@ -7,23 +7,31 @@
     background-color: black;
     color:orange;
     font-weight: 400;
-    height: 100px;
+    height: 100px!important;
     display: flex;
 }
 
+.App{
+    display:flex; /*弹性布局*/
+  min-height:100vh; /*100% visible height*/
+  flex-direction:column;
+}
+
+.content{
+    flex:1;
+}
 .footer{
     /* font-size: 70px; */
     justify-content: center;
     align-items: center;
-    flex:1;
+    
     text-align: center;
     background-color: black;
     color:white;
     height: 50px;
+    position:sticky;
     display: flex;
-    /* position: fixed;
-    width: 100vw;
-    bottom: 0; */
+    bottom:0;
 }
 
 .source{
