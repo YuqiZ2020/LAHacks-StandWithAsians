@@ -1,6 +1,35 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
+import data from '../../Components/fetchPetitions/events';
 import "./Resources.css"
+
+const events = data.map( (data)=>{
+    return(
+      <table className="eventable">
+        <thead>
+          <tr>
+              <th>DATE</th>
+              <th>TIME</th>
+              <th>STATE</th>
+              <th>CITY</th>
+              <th>LOCATION</th>
+              <th>MAP</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td key={data.id}>{data.day_of_wk} {data.date}/{data.year}</td>
+            <td key={data.id}>{data.time}</td>
+            <td key={data.id}>CA</td>
+            <td key={data.id}>{data.city}</td>
+            <td key={data.id}>{data.location}</td>
+            <td key={data.id}><a href={data.location_link}>location</a></td>
+          </tr>
+        </tbody>
+      </table>
+    );
+  }
+);
 
 export default class Resources extends React.Component {
   render() {
