@@ -1,6 +1,6 @@
 const data = [
-  {
-    "event_no0": {
+    {
+        "id": "01",
         "city": "San Francisco",
         "date": "03/27",
         "day_of_wk": "Sat",
@@ -9,7 +9,8 @@ const data = [
         "time": "11:00am",
         "year": "2021"
     },
-    "event_no1": {
+    {
+        "id": "02",
         "city": "Chicago",
         "date": "03/27",
         "day_of_wk": "Sat",
@@ -18,7 +19,8 @@ const data = [
         "time": "2:00pm",
         "year": "2021"
     },
-    "event_no2": {
+    {
+        "id": "03",
         "city": "Princeton",
         "date": "03/27",
         "day_of_wk": "Sat",
@@ -27,7 +29,8 @@ const data = [
         "time": "1:00PM",
         "year": "2021"
     },
-    "event_no3": {
+    {
+        "id": "04",
         "city": "Flushing",
         "date": "03/27",
         "day_of_wk": "Sat",
@@ -36,7 +39,8 @@ const data = [
         "time": "1:00PM",
         "year": "2021"
     },
-    "event_no4": {
+    {
+        "id": "05",
         "city": "Phoenix",
         "date": "03/27",
         "day_of_wk": "Sat",
@@ -45,7 +49,8 @@ const data = [
         "time": "10:00AM",
         "year": "2021"
     },
-    "event_no5": {
+    {
+        "id": "06",
         "city": "Montreal",
         "date": "03/21",
         "day_of_wk": "Sun",
@@ -54,7 +59,8 @@ const data = [
         "time": "12:50pm",
         "year": "2021"
     },
-    "event_no6": {
+    {
+        "id": "07",
         "city": "Dallas",
         "date": "03/21",
         "day_of_wk": "Sun",
@@ -63,7 +69,8 @@ const data = [
         "time": "7:00pm",
         "year": "2021"
     },
-    "event_no7": {
+    {
+        "id": "08",
         "city": "Chandler",
         "date": "03/21",
         "day_of_wk": "Sun",
@@ -72,7 +79,8 @@ const data = [
         "time": "6:00PM",
         "year": "2021"
     },
-    "event_no8": {
+    {
+        "id": "09",
         "city": "Portland",
         "date": "03/20",
         "day_of_wk": "Sat",
@@ -81,7 +89,8 @@ const data = [
         "time": "6:00pm",
         "year": "2021"
     },
-    "event_no9": {
+    {
+        "id": "10",
         "city": "Gainesville",
         "date": "03/20",
         "day_of_wk": "Sat",
@@ -90,6 +99,6 @@ const data = [
         "time": "7:30pm",
         "year": "2021"
     }
-}];
+];
 
 export default data;
