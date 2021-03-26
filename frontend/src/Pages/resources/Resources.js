@@ -1,6 +1,7 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
 import data from '../../Components/fetchPetitions/events';
+import sites from '../../Pages/resources/support';
 import "./Resources.css"
 
 const events = data.map( (data)=>{
@@ -15,6 +16,14 @@ const events = data.map( (data)=>{
           </tr>
     );
   }
+);
+
+const supports = sites.map( (sites)=>{
+    return(
+        <p key={sites.id}>{sites.title}: <a href={sites.url}>{sites.abbreviation}</a>
+        </p>
+      );
+    }    
 );
 
 export default class Resources extends React.Component {
@@ -52,6 +61,8 @@ export default class Resources extends React.Component {
         <Collapsible trigger="+ SUPPORT" triggerWhenOpen="- SUPPORT">
           <p>
             Get Mental and Health Support from Asian communities and organizations:
+            <br />
+            {supports}
           </p>
         </Collapsible>
         <Collapsible trigger="+ EMERGENCY REPORT" triggerWhenOpen="- EMERGENCY REPORT">
