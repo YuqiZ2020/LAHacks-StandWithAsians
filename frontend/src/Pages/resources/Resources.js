@@ -32,7 +32,7 @@ export default class Resources extends React.Component {
       <div className="resources">
         <h2>The community is SUPPORTIVE and strifing to CHANGE</h2>
         <Collapsible trigger="+ EVENTS" triggerWhenOpen="- EVENTS">
-          <p>Updated protests and events information below:</p>
+          <p><b>Updated protests and events information below:</b></p>
           <table className="eventable">
             <thead>
                 <tr>
