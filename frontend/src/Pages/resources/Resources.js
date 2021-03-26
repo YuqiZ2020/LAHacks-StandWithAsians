@@ -30,9 +30,9 @@ export default class Resources extends React.Component {
   render() {
     return (
       <div className="resources">
-        <h2>The community is SUPPORTIVE and strifing to change</h2>
+        <h2>The community is SUPPORTIVE and strifing to CHANGE</h2>
         <Collapsible trigger="+ EVENTS" triggerWhenOpen="- EVENTS">
-          <p>Updated protests and events information below.</p>
+          <p>Updated protests and events information below:</p>
           <table className="eventable">
             <thead>
                 <tr>
@@ -52,7 +52,7 @@ export default class Resources extends React.Component {
             <b>Always remember to keep safe during the pandemic.</b>
           </p>
           <div>
-            <span>View the circumstances here.</span>
+            <span>View the circumstances here:</span><br />
             <iframe className="map" width="650" height="400" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" title="2019-nCoV" src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" ></iframe>
             <br />
             <span><small>Source:arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c</small></span>
@@ -60,10 +60,9 @@ export default class Resources extends React.Component {
         </Collapsible>
         <Collapsible trigger="+ SUPPORT" triggerWhenOpen="- SUPPORT">
           <p>
-            Get Mental and Health Support from Asian communities and organizations:
-            <br />
-            {supports}
+            <b>Get Mental and Health Support from Asian communities and organizations:</b>
           </p>
+          <div>{supports}</div>
         </Collapsible>
         <Collapsible trigger="+ EMERGENCY REPORT" triggerWhenOpen="- EMERGENCY REPORT">
           <p>
