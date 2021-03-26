@@ -60,3 +60,5 @@ const sites = [
     "abbreviation": "AWGC"
   }
 ];
+
+export default sites;
