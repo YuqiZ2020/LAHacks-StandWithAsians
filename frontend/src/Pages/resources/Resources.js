@@ -20,7 +20,7 @@ const events = data.map( (data)=>{
 
 const supports = sites.map( (sites)=>{
     return(
-        <p key={sites.id}>{sites.title}: <a href={sites.url}>{sites.abbreviation}</a>
+        <p key={sites.id} className="supports">{sites.title}: <a href={sites.url}>{sites.abbreviation}</a>
         </p>
       );
     }    
