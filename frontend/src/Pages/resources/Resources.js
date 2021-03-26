@@ -21,9 +21,9 @@ export default class Resources extends React.Component {
   render() {
     return (
       <div className="resources">
-        <h2>The community is SUPPORTIVE</h2>
+        <h2>The community is SUPPORTIVE and strifing to change</h2>
         <Collapsible trigger="+ EVENTS" triggerWhenOpen="- EVENTS">
-          <p>update protests and events here.</p>
+          <p>Updated protests and events information below.</p>
           <table className="eventable">
             <thead>
                 <tr>
