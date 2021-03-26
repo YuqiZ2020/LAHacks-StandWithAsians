@@ -51,7 +51,7 @@ export default class Resources extends React.Component {
         </Collapsible>
         <Collapsible trigger="+ SUPPORT" triggerWhenOpen="- SUPPORT">
           <p>
-            Mental support
+            Get Mental and Health Support from Asian communities and organizations:
           </p>
         </Collapsible>
         <Collapsible trigger="+ EMERGENCY REPORT" triggerWhenOpen="- EMERGENCY REPORT">
