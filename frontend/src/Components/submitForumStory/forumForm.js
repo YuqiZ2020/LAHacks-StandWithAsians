@@ -115,9 +115,6 @@ class SubmitForm extends React.Component {
 
 
 
-
-
-
         {/* city or state */}
         <Form.Item
           name="state"
@@ -135,7 +132,7 @@ class SubmitForm extends React.Component {
             {states.map((state, index) => (
               <Option key={index} value={state}>{state}</Option>
             ))}
-            <Option value="other">other</Option>
+            <Option value="other">Other</Option>
           </Select>
 
 
