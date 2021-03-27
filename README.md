@@ -1,13 +1,13 @@
 # LAHacks21
 _LA Hacks 2021 Project Repo - Stop Asian Hate_
 
-We are building a community that fosters care and understandings. We offer a chance for asians to share our culture and story. We provide resources such as news, events, petitions and helps for asians. 
+We are building a community that fosters care and understanding. We offer a chance for asians to share our culture and story. We provide resources such as news, events, petitions and helps for asians. 
 
 ### Key Features
 
 #### News
 
-We offer related news, tweets and petitions regarding stopping asian hate. 
+We offer related news, tweets and petitions regarding stopping asian hate. We also show some stats on discrimination against Asians to 
 
 #### Gallery
 
