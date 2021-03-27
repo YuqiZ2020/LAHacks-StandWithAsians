@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   subsribeContainer: {
     // margin: "20px",
     // float: "right",
-    padding: "30px",
+    padding: "15px",
     backgroundColor: "black",
     position: "fixed",
     top: "350px",
