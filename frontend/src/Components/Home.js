@@ -22,7 +22,7 @@ export default class Home extends React.Component {
                 <div className='about-wrap'>
 
                     <div className="about">
-                        <h1>Stop Asian Hate</h1>
+                        <h1>STAND WITH ASIANS</h1>
                         <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
 
                     </div>
@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                 </div>
                 <NewsLetter />
             </div >
-            
+
         )
     }
 }

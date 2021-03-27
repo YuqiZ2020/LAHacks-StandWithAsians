@@ -5,14 +5,14 @@ function App() {
   return (
     <div className="App">
       <div className='title'>
-        title
+        #StandWithAsians
       </div>
 
 
       <div className='content'>
-      <Navbar />
+        <Navbar />
       </div>
-      
+
       <div className='footer'>
         © LA Hacks 2021
       </div>

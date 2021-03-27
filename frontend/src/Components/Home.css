@@ -20,15 +20,17 @@
 
 .about {    
     letter-spacing: 1px;
-    margin: 20px;
+    margin: 50px;
 }
 
 .about>h1{
     font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
 }
 
 .about>p {
     font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
 }
 
 @keyframes picture-scroll {

@@ -9,12 +9,13 @@
     font-weight: 400;
     height: 100px!important;
     display: flex;
+    font-family: 'Carter One', cursive;
 }
 
 .App{
     display:flex; /*弹性布局*/
-  min-height:100vh; /*100% visible height*/
-  flex-direction:column;
+    min-height:100vh; /*100% visible height*/
+    flex-direction:column;
 }
 
 .content{

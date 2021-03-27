@@ -6,6 +6,7 @@ font-family: 'Russo One', sans-serif;
 */
 
 body {
+  background-image: linear-gradient(to right, rgb(136, 136, 136), rgb(185, 147, 72));
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
