@@ -10,7 +10,7 @@ h2{
 }
 
 .Collapsible__trigger{
-  font-family: monospace;
+  font-family: "Merriweather", monospace;
   font-weight: 800;
   font-size: 35px;
 }
@@ -27,7 +27,7 @@ h2{
 }
 
 .Collapsible__contentInner{
-  font-family: "meriweather", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: large;
 }
 
@@ -35,7 +35,7 @@ h2{
   text-align: center;
   width: 80%;
   padding-top: 20px;
-  font-family: copperplate;
+  font-family: "Merriweather";
 }
 
 td{
@@ -53,5 +53,5 @@ th{
 
 .supports{
   padding-left: 40px;
-  font-family: "lucida consola";
+  font-family: "Merriweather";
 }
