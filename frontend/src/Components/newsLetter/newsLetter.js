@@ -30,8 +30,8 @@ const useStyles = makeStyles({
     padding: "15px",
     backgroundColor: "black",
     position: "fixed",
-    top: "350px",
-    right: "20px"
+    bottom: "12vh",
+    right: "2vw"
   }
 
 })

@@ -2,14 +2,14 @@
     font-size: 70px;
     justify-content: center;
     align-items: center;
-    flex:1;
     text-align: center;
     background-color: black;
     color:orange;
     font-weight: 400;
-    height: 100px!important;
-    display: flex;
+    
+    display: block;
     font-family: 'Carter One', cursive;
+    height: 100px!important;
 }
 
 .App{
@@ -31,7 +31,7 @@
     color:white;
     height: 50px;
     /* position:sticky; */
-    display: flex;
+    display: block;
     bottom:0;
 }
 

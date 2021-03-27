@@ -1,7 +1,10 @@
 .display-window {
-    width: 50vw;
-    height: 30vw;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
     overflow-x: hidden;
 }
 
@@ -26,15 +29,15 @@
 }
 
 .image-list {
-    width: 250vw;
-    height: 30vw;
+    width: 500vw;
+    height: 100vh;
     animation: 20s picture-scroll infinite;
 }
 
 .image-list>img {
     display: inline;
-    width: 50vw;
-    height: 30vw;
+    width: 100vw;
+    height: 100vh;
     object-fit:cover;
 }
 
@@ -57,12 +60,12 @@
     0% {};
     2% {transform: translateX(0)}
     20% {transform: translateX(0)}
-    22% {transform: translateX(-50vw)}
-    40% {transform: translateX(-50vw)}
-    42% {transform: translateX(-100vw)}
-    60% {transform: translateX(-100vw)}
-    62% {transform: translateX(-150vw)}
-    80% {transform: translateX(-150vw)}
-    82% {transform: translateX(-200vw)}
-    100% {transform: translateX(-200vw)}
+    22% {transform: translateX(-100vw)}
+    40% {transform: translateX(-100vw)}
+    42% {transform: translateX(-200vw)}
+    60% {transform: translateX(-200vw)}
+    62% {transform: translateX(-300vw)}
+    80% {transform: translateX(-300vw)}
+    82% {transform: translateX(-400vw)}
+    100% {transform: translateX(-400vw)}
 }
