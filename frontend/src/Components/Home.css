@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+.test-image{
+    width:100vm;
+}
+
 .image-list {
     width: 250vw;
     height: 30vw;
