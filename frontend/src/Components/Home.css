@@ -18,6 +18,19 @@
     object-fit:cover;
 }
 
+.about {    
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+.about>h1{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about>p {
+    font-family: 'Merriweather', serif;
+}
+
 @keyframes picture-scroll {
     0% {};
     2% {transform: translateX(0)}
