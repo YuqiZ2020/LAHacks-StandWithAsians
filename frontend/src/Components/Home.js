@@ -15,7 +15,7 @@ export default class Home extends React.Component {
 
 
                 <div className='test-image>'>
-                    <img src={Test1}/>
+                    <img className='test-img1'src={Test1}/>
                 </div>
                 <div className="display-window">
 
