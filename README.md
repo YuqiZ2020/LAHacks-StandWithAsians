@@ -22,6 +22,7 @@ Users can upload images representing their culture. Admin will review the images
 #### Webpage Implementation with ReactJS
 
 #### Extract Related News
+The news are extracted from https://newsapi.org/, which we displayed related news to Stop Asian Hate movements. For tweets, we take advantage of the Twitter api and Twit package. 
 
 #### Data Storage with Google Firebase
 
