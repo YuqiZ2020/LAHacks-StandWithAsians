@@ -53,6 +53,9 @@ export default class News extends React.Component {
                         <Map4 />
                     </div>
                 </div>
+                <div className='source'>
+                    Source: 210312-Stop-AAPI-Hate-National-Report-.pdf FACT SHEET- Anti-Asian Hate 2020 rev 3.21.21.pdf
+      </div>
             </div>
         )
     }

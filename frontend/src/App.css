@@ -34,13 +34,3 @@
     bottom:0;
 }
 
-.source{
-    color:grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    /* position: fixed;
-    bottom: 55px;
-    width: 100vw; */
-}

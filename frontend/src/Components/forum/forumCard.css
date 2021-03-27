@@ -3,13 +3,14 @@
 }
 
 .card-box {
-    width: 250px;
+    width: 450px;
     height: 250px;
     overflow-y: scroll!important;
     margin-left: 20px;
     padding: 20px;
     background-color: white;
-    border-radius: 10px
+    border-radius: 10px;
+    color: black!important;
 }
 
 .card-box::-webkit-scrollbar-thumb {
