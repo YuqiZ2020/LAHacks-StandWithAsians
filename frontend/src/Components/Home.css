@@ -5,8 +5,24 @@
     overflow-x: hidden;
 }
 
+.test-img1{
+    /* width:100vm; */
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    z-index: -999;
+    position: fixed;
+    top: 0;
+
+}
+
+
 .test-image{
-    width:100vm;
+    width:100vw;
+    /* margin:auto; */
+    z-index: -999;
+    position: fixed;
+    top: 0;
 }
 
 .image-list {
