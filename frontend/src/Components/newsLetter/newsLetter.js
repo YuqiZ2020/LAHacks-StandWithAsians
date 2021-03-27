@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     height:"35px",
     border: "none",
     backgroundColor:"white",
-    color:"white",
+    color:"black",
     fontFamily:'Russo One'
   },
   subscribeMessage:{
