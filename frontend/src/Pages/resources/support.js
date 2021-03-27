@@ -37,9 +37,9 @@ const sites = [
   },  
   {
     "id": "07",
-    "url": "https://samhin.org/resources/",
-    "title": "South Asian Mental Health Initiative & Network",
-    "abbreviation": "SAMHIN"  
+    "url": "http://www.asianmentalhealth.org/",
+    "title": "New York Coalition for Asian American Mental Health",
+    "abbreviation": "NYCAAMH"  
   },
   {
     "id": "08",

@@ -50,3 +50,8 @@ th{
   width: 80%;
   height: 700px;
 }
+
+.supports{
+  padding-left: 40px;
+  font-family: "lucida consola";
+}
