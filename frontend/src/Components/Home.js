@@ -5,7 +5,6 @@ import sample2 from "../Image/sample2.png";
 import sample3 from "../Image/sample3.png";
 import sample4 from "../Image/sample4.png";
 import sample5 from "../Image/sample5.png";
-
 export default class Home extends React.Component {
     render() {
         return (
