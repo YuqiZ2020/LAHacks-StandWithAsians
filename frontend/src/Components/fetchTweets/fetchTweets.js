@@ -1,70 +1,30 @@
-// import React, { Component } from 'react'
+import React, {useState, useEffect} from 'react';
+import TweetCard from './TweetCard'
 
-// const Twit = require('twit')
-// // https://github.com/ttezel/twit
-// // a library to use twitter api
+const FetchTweets = () => {
+  const [statuses, setStatuses] = useState([]);
 
+  useEffect(() => {
+    fetch('http://localhost:5000/').then(function(response){
+      return response.json(); //parsed to json
+    }).then(function(parsedResponse){
+      //use parsedResponse
+      setStatuses(parsedResponse.statuses);
+    });
+  }, []);
 
-// const notifier = require('node-notifier');
-// const open = require('open');
+  return (
+    <div>
+        {/* use && to ensure there is data for statuses when render */}
+        {statuses && statuses.map(status => (
+          <TweetCard data={status} key={status.id}/>
+           
+        ))}
+    </div>
+  );
 
-// // franc is a library that quickly checks the language
-// const franc = require('franc')
+}
 
-// // authentication key
-// const apikey = 'FloPEb0l6VcFJLIm50Yp6iVch'
-// const apiSecretKey = 'ufKjuuyS5LMLZ9JCiAfUH7VNftzNXnzBuL8RBrkNi3AQWhEFO8'
-// const accessToken = '1189561232577024002-P2bZbwiMSYrzjHPiw9yhrXhNwJLo6a'
-// const accessTokenSecret = 'jT0wctsZZNLNIVm61gVQf1F6kZdLcEwzas1Is3OULP8dE'
-
-
-// var T = new Twit({
-//   consumer_key: apikey,
-//   consumer_secret: apiSecretKey,
-//   access_token: accessToken,
-//   access_token_secret: accessTokenSecret,
-// });
-
-
-
-// export default class fetchTweets extends Component {
-
-//   constructor(props) {
-//     super(props);
-//     // use twit to fetch data
-    
-
-//   }
-//   componentDidMount() {
-
-//     // (async () => {
-
-//     // get recent tweets about #stop asian hate
-//     T.get('search/tweets', { q: '#StopAsianHate since:2020-01-01', result_type: 'popular', count: 1, lang: 'en' }, function (err, data, response) {
-//       const tweets = data.statuses
-//       console.log(tweets);
-//     })
-
-//     // })();
-//   }
-
-
-
-//   render() {
-//     return (
-//       <div>
-
-//       </div>
-//     )
-//   }
-// }
-
-
-
-
-
-
-
-
+export default FetchTweets;
 
 

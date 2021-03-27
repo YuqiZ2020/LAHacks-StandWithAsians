@@ -13,3 +13,12 @@
     margin-top: 70px;
     /* background-color: gray; */
 }
+
+.forumT{
+    display:block;
+    /* background-color: red; */
+    width:95%;
+    font-family: 'Russo One', sans-serif; 
+    margin:0 auto;
+    font-size:30px;
+}

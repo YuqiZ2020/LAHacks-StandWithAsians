@@ -1,36 +1,51 @@
 import React, { useEffect, useState } from 'react';
 import "./Forum.css"
 import ForumMap from '../../Components/forum/forumMap'
-
-
+import PlaceHolder from '../../Components/skeleton/Skeleton'
 import { db } from "../../firebase"
-
-
 import SubmitButton from '../../Components/submitForumStory/submitButton'
 
 export default function Forum() {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
+    const [Loaded, setLoaded] = useState(false);
 
-    const fetchData = async () => {
-        // const forumRef = db.collection("forum");
-        // const forum = await forumRef.get()
-        // forum.docs.forEach(item=>{
-        //     setData([...data, item.data()])
-        // })
-        db.collection("forum")
-            .get()
-            .then(querySnapshot => {
-                const items = querySnapshot.docs.map(doc => doc.data());
-                // console.log(item)
-                setData(items)
-            })
-    }
+    // const fetchData = async () => {
+    //     db.collection("forum")
+    //         .get()
+    //         .then(querySnapshot => {
+    //             const items = querySnapshot.docs.map(doc => {
+    //                 return { ...doc.data(), realId: doc.id }
+    //             }
+    //             );
+    //             console.log(items)
+    //             setData(items)
+    //         })
+    // }
+    // useEffect(() => {
+        
+    //     fetchData();
+        
+    // }, []);
+
     useEffect(() => {
-        fetchData();
+        db.collection("forum")
+        .get()
+        .then(querySnapshot => {
+            const items = querySnapshot.docs.map(doc => {
+                return { ...doc.data(), realId: doc.id }
+            }
+            );
+            console.log(items)
+            setLoaded(true)
+            setData(items)
+        }); 
     }, []);
+
+
 
     return (
         <div className="forum">
+
 
             {/*Title and Button  */}
             <div className='fixedSubmit'>
@@ -39,20 +54,18 @@ export default function Forum() {
                 </div>
 
                 <div className="stats">
-                    <p>XXX people have shared their stories</p>
+                    <p>{data.length} people have shared their stories</p>
                 </div>
 
             </div>
 
-
-
             <div className='stories-container'>
-                {console.log(data)}
-
-
+                {console.log(data.length)}
                 <div className='stories1'>
+                    {Loaded
+                        ? <ForumMap data={data} />
+                        : <PlaceHolder />}
 
-                    <ForumMap data={data} />
 
                 </div>
             </div>
@@ -63,3 +76,7 @@ export default function Forum() {
 
     )
 }
+
+
+
+

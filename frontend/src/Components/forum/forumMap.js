@@ -4,6 +4,7 @@ import "./forumMap.css"
 
 
 
+
 function forumMap({ data }) {
 
   return (
@@ -12,7 +13,7 @@ function forumMap({ data }) {
       <div className="forum-map">
         {data
           ? data.map((data) => (
-            <ForumCard data={data} key={data.id} />
+            <ForumCard data={data} key={data.realId} />
           ))
           : 'Loading'}
           

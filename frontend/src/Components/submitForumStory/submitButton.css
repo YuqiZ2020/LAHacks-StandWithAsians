@@ -8,5 +8,11 @@
     border: 1px solid black;
     font-size: 16px;
     text-align: center;
-    font-family: 'Russo One', sans-serif; 
+    font-family: "Permanent Marker", fantasy;
+    transition: 0.4s;
 }
+
+.button:hover {
+    background-color: black; /* Green */
+    color: white;
+  }
