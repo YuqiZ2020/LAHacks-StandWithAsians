@@ -23,7 +23,8 @@ const tailLayout = {
 
 class SubmitForm extends React.Component {
   state = {
-    Anony : false
+    Anony : false,
+    submitted: false,
   }
   formRef = React.createRef();
 
@@ -41,6 +42,7 @@ class SubmitForm extends React.Component {
     })
       .then(() => {
         console.log("Document successfully written!");
+        this.setState({submitted:true})
       })
       .catch((error) => {
         console.error("Error writing document: ", error);
@@ -61,6 +63,11 @@ class SubmitForm extends React.Component {
 
   render() {
     return (
+      <div>
+        {this.state.submitted && <p>Thank you for sharing </p>}
+        {
+          !this.state.submitted &&
+        
       <Form {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
 
 
@@ -183,7 +190,8 @@ class SubmitForm extends React.Component {
           </Button>
 
         </Form.Item>
-      </Form>
+      </Form>}
+      </div>
     );
   }
 }
