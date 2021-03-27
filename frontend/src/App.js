@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className='title'>
-        title
+      Stand with Asians
       </div>
 
 
