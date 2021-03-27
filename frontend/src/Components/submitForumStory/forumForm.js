@@ -83,6 +83,12 @@ class SubmitForm extends React.Component {
 
         </Form.Item>
  
+        <input
+        type="checkbox" 
+        style={{marginLeft:"100px", marginTop:"-100px"}}
+        checked = {this.state.Anony} 
+        onChange = {()=>{this.onToggleAnony(); }}/>
+        <label>  Anonymous</label>
         {/* name */}
         <Form.Item
           name="name"
@@ -97,11 +103,10 @@ class SubmitForm extends React.Component {
         >
           <Input disabled = {this.state.Anony}/>
                     
-          
         </Form.Item>
-        <Checkbox 
-        checked = {this.state.Anony} 
-        onChange = {()=>{this.onToggleAnony(); }}>Anonymous</Checkbox>
+
+
+
 
 
 

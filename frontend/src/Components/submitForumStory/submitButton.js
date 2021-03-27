@@ -36,6 +36,7 @@ const SubmitButton = () => {
         <div>+ Share Your Stories +</div>
       </button>
       <Modal
+        centered
         title="Share Your Stories"
         visible={visible}
         onOk={handleOk}

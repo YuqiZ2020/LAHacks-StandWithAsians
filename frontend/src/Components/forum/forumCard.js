@@ -28,14 +28,14 @@ const useStyles = makeStyles({
         minWidth: '80%',
         margin: 20,
         padding:20,
-        backgroundColor:'white',
+        backgroundColor:'black',
     
     },
     media: {
         height: 30,
         width:30,
         
-        // backgroundColor:'blue',
+        backgroundColor:'black',
         float:'left',
     },
     name:{
@@ -60,14 +60,24 @@ const useStyles = makeStyles({
         // backgroundColor:'red',
         
     },
+    nameCityText: {
+        fontFamily:'Russo One',
+        color:"white",
+    },
     content:{
         // marginTop:-20,
         // backgroundColor:'pink',
         marginLeft:'-16px',
+        color:"white",
         
         
         // paddingLeft:-10,
     },
+    discussionButton:{
+        fontFamily:'Russo One',
+        color: "black",
+        color:"white",
+    }
 });
 
 const state = (data) =>{
@@ -104,7 +114,7 @@ function ForumCard({ data }) {
                     />
 
                     <CardContent className={classes.nameCity}>
-                        <Typography  variant="h7" component="h5">
+                        <Typography className ={classes.nameCityText} variant="h6" component="h5">
                             {data.name} from {state(data)}
                         </Typography>
                     </CardContent>
@@ -120,7 +130,7 @@ function ForumCard({ data }) {
                 </CardActionArea>
 
                 <CardActions>
-                    <Button size="small" color="primary" onClick = {()=>{history.push('/forum/'+data.realId)}}>
+                    <Button size="small" color="black" className = {classes.discussionButton} onClick = {()=>{history.push('/forum/'+data.realId)}}>
                         Join Discussion
                         </Button>
                     {/* <Button size="small" color="primary"
