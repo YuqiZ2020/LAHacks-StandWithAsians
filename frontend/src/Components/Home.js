@@ -15,14 +15,14 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <div className="display-window">
-                    <div className="image-list">
-                        <img src={test1} alt="test1"></img>
-                        <img src={test2} alt="test2"></img>
-                        <img src={test3} alt="test3"></img>
-                        <img src={test4} alt="test4"></img>
-                        <img src={test5} alt="test5"></img>
-                    </div>
+                <div className="display-window" />
+
+                <div className="image-list">
+                    <img src={test1} alt="test1"></img>
+                    <img src={test2} alt="test2"></img>
+                    <img src={test3} alt="test3"></img>
+                    <img src={test4} alt="test4"></img>
+                    <img src={test5} alt="test5"></img>
                 </div>
                 <div className='about-wrap'>
 
