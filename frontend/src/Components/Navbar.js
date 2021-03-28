@@ -24,12 +24,12 @@ export default class Navbar extends React.Component {
                         <div className='link'>
                             <div className='dd'>
                                 <Link to="/news" className="link">News</Link>
-                                <div class="dropdown-content">
+                                {/* <div class="dropdown-content">
                                     <Link to="/news#news-news">News</Link>
                                     <Link to="/news#news-tweets">Tweets</Link>
                                     <Link to="/news#news-petitions">Petitions</Link>
                                     <a href="#news-data">Data</a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <Link to="/forum" className="link">Forum</Link>

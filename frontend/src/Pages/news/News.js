@@ -8,7 +8,7 @@ import Map2 from '../../Components/maps/map2'
 import Map3 from '../../Components/maps/map3'
 import Map4 from '../../Components/maps/map4'
 import PetitionMap from '../../Components/petitions/PetitionMap'
-
+import PetitionData from "../../Components/fetchPetitions/petitions";
 
 export default class News extends React.Component {
     constructor(props) {
@@ -31,7 +31,7 @@ export default class News extends React.Component {
 
                 {/* change org*/}
                 <div className='forumT' id='news-petitions'>Petitions</div>
-                <PetitionMap />
+                <PetitionMap data = {PetitionData} />
 
 
 

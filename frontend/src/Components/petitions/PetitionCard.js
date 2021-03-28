@@ -42,14 +42,6 @@ export default function PetitionCard({ data }) {
     const [Expanded, setExpanded] = React.useState('https://twitter.com/home');
 
 
-    React.useEffect(()=>{
-        if(data.entities.urls[0].expanded_url)
-        {
-            const exp_url = data.entities.urls[0].expanded_url
-            setExpanded(exp_url);
-        }
-    },[])
-
     return (
         <Card className={classes.root}>
 
@@ -58,25 +50,24 @@ export default function PetitionCard({ data }) {
             {/* header */}
             <CardHeader className={classes.header}
                 avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar}>
+                    <Avatar aria-label="petition" className={classes.avatar}>
                         <img src={data.img_url} />
                     </Avatar>
                 }
-                title={data.user.screen_name}
-                subheader={data.created_at}
+                title={data.title}
             />
 
 
 
             <CardContent className={classes.content}>
                 <Typography variant="body2" className={classes.tw_text}color="textSecondary" component="p">
-                    {data.text}
+                    {data.petition_to}
                 </Typography>
             </CardContent>
 
             <CardActions className={classes.tw_act}>
                 <Button size="small" color="primary" className={classes.tw_button}
-                    href= {Expanded}>
+                    href= {data.url}>
                     Learn More
                         </Button>
             </CardActions>
