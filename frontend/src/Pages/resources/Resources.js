@@ -67,8 +67,8 @@ export default class Resources extends React.Component {
         <Collapsible trigger="+ EMERGENCY REPORT" triggerWhenOpen="- EMERGENCY REPORT">
           <p>
             <b>If you encounter emergency situation, reach out.</b> <br />
-            Police: 911 <br />
-            Asian Hospital and Medical Center EMERGENCY NUMBER: +(632)8-876-5739 <br />
+            <span className="indent">Police: 911 <br /></span>
+            <span className="indent">Asian Hospital and Medical Center EMERGENCY NUMBER: +(632)8-876-5739 <br /><br /><br /></span>
           </p>
           <p>
             <b>Report Asian Hate Incidents on our forum or other sites:</b> <br />
