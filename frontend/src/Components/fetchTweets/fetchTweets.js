@@ -5,7 +5,7 @@ const FetchTweets = () => {
   const [statuses, setStatuses] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/').then(function(response){
+    fetch('https://lahacks21-fetchnews.hostman.site/').then(function(response){
       return response.json(); //parsed to json
     }).then(function(parsedResponse){
       //use parsedResponse

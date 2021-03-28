@@ -42,9 +42,10 @@ export default function TweetCard({ data }) {
     const [Expanded, setExpanded] = React.useState('https://twitter.com/home');
 
 
-    React.useEffect(() => {
-        if (data.entities.urls[0]) {
-            if (data.entities.urls[0].expanded_url) {
+    React.useEffect(()=>{
+        if(data.entities.urls[0]){
+            if(data.entities.urls[0].expanded_url)
+            {
                 const exp_url = data.entities.urls[0].expanded_url
                 setExpanded(exp_url);
             }
