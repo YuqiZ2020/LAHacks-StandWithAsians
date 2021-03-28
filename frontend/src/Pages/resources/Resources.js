@@ -68,8 +68,9 @@ export default class Resources extends React.Component {
           <p>
             <b>If you encounter emergency situation, reach out.</b> <br />
             <span className="indent">Police: 911 <br /></span>
-            <span className="indent">Asian Hospital and Medical Center EMERGENCY NUMBER: +(632)8-876-5739 <br /><br /><br /></span>
+            <span className="indent">Asian Hospital and Medical Center EMERGENCY NUMBER: +(632)8-876-5739 </span>
           </p>
+          <br /><br /><br />
           <p>
             <b>Report Asian Hate Incidents on our forum or other sites:</b> <br />
             <a href="https://stopaapihate.typeform.com/to/zhMP3fUx" className="indent">STOP AAPI HATE</a><br />
