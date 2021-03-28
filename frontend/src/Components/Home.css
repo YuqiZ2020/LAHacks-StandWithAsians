@@ -6,7 +6,7 @@
     left: 0;
     z-index: -998;
     overflow-x: hidden;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .image-list {
@@ -42,7 +42,7 @@
 }
 
 @keyframes picture-scroll {
-    0% {};
+    0% {}
     2% {transform: translateX(0)}
     20% {transform: translateX(0)}
     22% {transform: translateX(-100vw)}
