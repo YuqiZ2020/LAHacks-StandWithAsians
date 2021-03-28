@@ -43,10 +43,12 @@ export default function TweetCard({ data }) {
 
 
     React.useEffect(()=>{
-        if(data.entities.urls[0].expanded_url)
-        {
-            const exp_url = data.entities.urls[0].expanded_url
-            setExpanded(exp_url);
+        if(data.entities.urls[0]){
+            if(data.entities.urls[0].expanded_url)
+            {
+                const exp_url = data.entities.urls[0].expanded_url
+                setExpanded(exp_url);
+            }
         }
     },[])
 
