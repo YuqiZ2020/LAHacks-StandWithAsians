@@ -64,7 +64,7 @@ export default function TweetCard({ data }) {
                     </Avatar>
                 }
                 title={data.user.screen_name}
-                subheader={data.created_at}
+                subheader={data.created_at.substring(0,20)}
             />
 
 
