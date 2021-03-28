@@ -1,16 +1,12 @@
 import React from 'react';
 import "./Home.css";
 import NewsLetter from "../Components/newsLetter/newsLetter"
-import sample1 from "../Image/sample1.png";
-import sample2 from "../Image/sample2.png";
-import sample3 from "../Image/sample3.png";
-import sample4 from "../Image/sample4.png";
-import sample5 from "../Image/sample5.png";
+
 import test1 from '../Image/test1.png';
 import test2 from '../Image/test2.png';
 import test3 from '../Image/test3.png';
 import test4 from '../Image/test4.png';
-import test5 from '../Image/test5.png';
+import test5 from '../Image/Picture1.png';
 export default class Home extends React.Component {
     render() {
         return (
